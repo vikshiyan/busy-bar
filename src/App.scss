@@ -1,39 +1,25 @@
 @import './styles/main.scss';
 
-// .page {
-//   // background-color: $hover-background-color;
-
-//   // color: $second-text-colorr;
-// }
+.page {
+  position: relative;
+  color: $main-text-color;
+  background-color: $main-background-color; 
+}
 
 .container {
-  padding-inline: 16px;
+  padding-inline: 10px;
 
   @include on-tablet {
     padding-inline: 24px;
   }
 
   @include on-desktop {
-    padding-inline: 0;
-    max-width: 1136px;
+    padding-top: 20px;
+    // padding-inline: 0;
+    // max-width: 1136px;
     margin: 0 auto;
   }
 }
 
 
-.outletWrapper {
-  min-height: calc(100vh - 257px);
-  padding-bottom: 56px;
-  padding-top: 72px;
 
-  @include on-tablet {
-    min-height: calc(100vh - 96px);
-    padding-bottom: 64px;
-  }
-
-  @include on-desktop {
-    min-height: calc(100vh - 96px);
-    padding-bottom: 80px;
-    padding-top: 88px;
-  }
-}

@@ -1,0 +1,20 @@
+@import '../../styles/main.scss';
+
+.productivity-display {
+  
+  margin-top: 50px; //?
+  margin-bottom: 30px; 
+  @include page-grid;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__photo {
+    max-width: 100%;
+    height: auto;
+    transform: rotate(90deg);
+
+  }
+}
