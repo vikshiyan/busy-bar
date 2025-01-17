@@ -2,6 +2,9 @@ import {FC} from 'react';
 import './Header.scss';
 import {VideoBackground} from '../VideoBackground';
 
+import icon_cloud from '../../images/icon-cloud.svg';
+import icon_for_cloud from '../../images/icon-for-cloud.svg';
+
 import first_icon from '../../images/icon-first.svg';
 import second_icon from '../../images/icon-second.svg';
 import third_icon from '../../images/icon-third.svg';
@@ -14,7 +17,7 @@ export const Header: FC = () => {
       <nav className='header-nav'>
         <ul className='header-nav__list'>
           <li className='header-nav__item'>
-            <a href='#' className='header-nav__link'>
+            <a href='#' className='header-nav__link--active'>
               Home
             </a>
           </li>
@@ -35,7 +38,18 @@ export const Header: FC = () => {
           </li>
           <li className='header-nav__item header-nav__item--right'>
             <a href='#' className='header-nav__link'>
-              PLLLLLL
+              <img
+                src={icon_cloud}
+                alt='icon_cloud'
+                className='header-nav__link-cloud'
+              />
+              <div className='header-nav__link'>
+                Cloud Access
+                <img src={icon_for_cloud} alt='icon_for_cloud' />
+              </div>
+              <div className='header-nav__link-description'>
+                Log in to Busy Cloud to control your device via API and MQTT
+              </div>
             </a>
           </li>
         </ul>

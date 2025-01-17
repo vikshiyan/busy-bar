@@ -1,21 +1,24 @@
 @import '../../styles/main.scss';
 
 .header {
-  // @include page-grid;
-  // background: url('../../images/background-photo.png') no-repeat center center/cover;
+  position: relative;
   width: 100%;
   height: 100vh;
-  color: $second-text-color;
+  z-index: 1;
+  overflow: hidden;
 
   &-nav {
+    color: $second-text-color;
+    margin-bottom: 320px;
+
     @include on-tablet {
       height: 60px;
       margin-bottom: 320px;
     }
 
     @include on-desktop {
-      height: 100px;
-      margin-bottom: 400px;
+      height: 200px;
+      margin-bottom: 300px;
     }
   
     &__list {
@@ -30,56 +33,71 @@
       display: flex;
       justify-content: space-between;
   
+      
       @include on-desktop {
         font-size: 20px;
       }
   
       &--right {
         margin-left: auto;
+        line-height: 24px;
+      }
+    }
+
+    &__link {
+      text-decoration: underline;
+
+      &--active {
+        text-decoration: none;
+      }
+
+      &-cloud {
+        width: 90px;
+        height: 50px;
+      }
+
+      &-description {
+        text-decoration: none;
       }
     }
   }
 
   &-content {
-    position: relative;
-    color: $main-text-color;
-
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
     &__title {
-     margin: 0 auto;
-  
-      width: 644px;
-      height: 90px;
+      margin: 0 auto;
+      
       line-height: 30px;
-      font-size: 20px;
       font-weight: 400;
       margin-bottom: 50px;
+      width: 300px;
 
+      @include on-tablet {
+        width: 550px;
+      }
+    
+      @include on-desktop {
+        width: 680px;
+      }
 
       &-special {
-        
         font-weight: 700;
-        @include on-tablet {
-          font-size: 18px;
-        }
+        font-size: 18px;
   
         @include on-desktop {
           font-size: 20px;
         }
-      }
-
-      @include on-tablet {
-        font-size: 18px;
-      }
-
-      @include on-desktop {
-        font-size: 20px;
       }
     }
 
     &__wrapper-button {
       display: flex;
       justify-content: center;
-
+   
     }
 
     &__button {
@@ -93,10 +111,21 @@
       border-color: transparent;
       border-style: solid;
       transition: background-color 0.03s ease-in-out,color 0.03s ease-in-out,border-color 0.03s ease-in-out;
-      width: 200px;
-      height: 72px;
-      margin-bottom: 100px;
-     
+      width: 143px;
+      height: 55px;
+      
+      margin-bottom: 20px; // ?
+
+      @include on-tablet {
+        margin-bottom: 50px;
+        
+      }
+
+      @include on-desktop {
+        width: 200px;
+        height: 72px;
+        margin-bottom: 190px;
+      }
 
       &:hover {
         background-color: $button-color-hover;
@@ -105,27 +134,29 @@
   }
 
   &-footer{
+    color: $second-text-color;
 
-
-  @include on-desktop {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-    
-    &__item {
-      border: solid 1px $second-text-color; // delete
-      
     @include on-desktop {
       display: flex;
-      height: 200px;
       width: 100%;
-      padding: 30px;
+      justify-content: space-between;
     }
+    
+    &__item {
+ 
+      display: flex;
+      width: 100%;
+        
+
+      @include on-desktop {
+        display: flex;
+        width: 100%;
+        padding: 30px;
+        border: solid 1px $second-text-color;
+      }
     }
 
     &__icon {
-      // fill: #a8a8a8;
       width: 61px;
       height: 61px;
     }
@@ -134,12 +165,30 @@
       padding-left: 30px;
     }
 
-    &__title {
+    &__titile {
+
+      @include on-tablet {
+        font-size: 18px;
+      }
+
+      @include on-desktop {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
 
     }
 
-    &__description{
+    &__description {
+      margin-bottom: 10px;
+      font-size: 13px;
 
+      @include on-tablet {
+        font-size: 14px;
+      }
+
+      @include on-desktop {
+        font-size: 16px;
+      }
     }
   }
 }

@@ -1,16 +1,23 @@
+@import '../../styles/main.scss';
+
 .video-background {
   position: absolute;
   width: 100%;
   height: 100%;
-  display: block;
   overflow: hidden;
+  z-index: -1;
 
   &__video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
     position: absolute;
-    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
   }
+
+
 }
+

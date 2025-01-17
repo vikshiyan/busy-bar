@@ -1,6 +1,7 @@
 import './App.scss';
 import {Footer} from './components/Footer';
 import {Header} from './components/Header';
+import {ProductivityMultiTool} from './components/ProductivityMulti-tool';
 
 export function App() {
   // const [count, setCount] = useState(0);
@@ -9,10 +10,9 @@ export function App() {
     <div id='page-top' className='page'>
       <Header />
       <div className='container'>
-        <div className='outletWrapper'>
-          <Footer />
-        </div>
+        <ProductivityMultiTool />
       </div>
+      <Footer />
     </div>
   );
 }
