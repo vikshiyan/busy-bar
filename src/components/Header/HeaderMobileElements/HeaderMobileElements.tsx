@@ -18,4 +18,3 @@ export const HeaderMobileElements: React.FC<Props> = ({toggleMenu}) => {
     </div>
   );
 };
- 
