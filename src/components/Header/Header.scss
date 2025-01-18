@@ -3,13 +3,11 @@
 .header {
   position: relative;
   width: 100%;
-  height: 100vh;
   z-index: 1;
   overflow: hidden;
 
   &-nav {
     color: $second-text-color;
-    margin-bottom: 320px;
 
     @include on-tablet {
       height: 60px;
@@ -17,7 +15,7 @@
     }
 
     @include on-desktop {
-      height: 200px;
+      height: 150px;
       margin-bottom: 300px;
     }
   
@@ -41,27 +39,72 @@
       &--right {
         margin-left: auto;
         line-height: 24px;
+        display: flex;
       }
     }
 
     &__link {
       text-decoration: underline;
+      font-size: 20px;
 
       &--active {
-        text-decoration: none;
-      }
-
-      &-cloud {
-        width: 90px;
-        height: 50px;
-      }
-
-      &-description {
+        font-size: 20px;
         text-decoration: none;
       }
     }
+
+    &__lr {
+      display: flex;
+      
+      &-title {
+        display: inline-block;
+        text-decoration: underline;
+        line-height: 24px;
+        font-size: 18px;
+        padding-right: 8px;
+
+        @include on-desktop {
+          font-size: 20px;
+        }
+      }
+
+      &-cloud {
+        width: 70px;
+        height: 49px;
+        padding-right: 8px;
+
+        @include on-desktop {
+          width: 90px;
+          height: 59px;
+          padding-right: 13px;
+        }
+      }
+
+      &-icon {
+        width: 15px;
+        height: 15px;
+
+        @include on-desktop {
+          width: 18px;
+          height: 18px;
+        }
+      }
+
+      &-description {
+        padding-top: 5px;
+        line-height: 24px;
+        display: block;
+        text-decoration: none;
+        width: 240px;
+      }
+    }
+
+    @include only-mobile {
+      display: none;
+    }
   }
 
+ 
   &-content {
     display: flex; 
     justify-content: space-around;
@@ -70,18 +113,24 @@
     
     &__title {
       margin: 0 auto;
+      font-size: 16px;
       
       line-height: 30px;
       font-weight: 400;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       width: 300px;
 
       @include on-tablet {
         width: 550px;
+        margin-bottom: 40px;
+        font-size: 18px;
+
       }
     
       @include on-desktop {
         width: 680px;
+        margin-bottom: 70px;
+        font-size: 20px;
       }
 
       &-special {
@@ -101,7 +150,7 @@
     }
 
     &__button {
-      color: $button-text-color;
+      color: $white-color;
       line-height: 1.2;
       font-weight: 400;
       text-transform: uppercase;
@@ -114,7 +163,7 @@
       width: 143px;
       height: 55px;
       
-      margin-bottom: 20px; // ?
+      margin-bottom: 20px;
 
       @include on-tablet {
         margin-bottom: 50px;
@@ -124,7 +173,7 @@
       @include on-desktop {
         width: 200px;
         height: 72px;
-        margin-bottom: 190px;
+        margin-bottom: 150px;
       }
 
       &:hover {
@@ -143,16 +192,20 @@
     }
     
     &__item {
- 
+      padding-block: 10px;
       display: flex;
       width: 100%;
+
+      @include on-tablet {
+        padding: 5px;
+      }
         
 
       @include on-desktop {
         display: flex;
         width: 100%;
         padding: 30px;
-        border: solid 1px $second-text-color;
+        border: solid 1px #d9d9d9;
       }
     }
 
@@ -191,6 +244,7 @@
       }
     }
   }
+
 }
   
 

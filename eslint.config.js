@@ -36,6 +36,7 @@ export default [
       'no-param-reassign': [2, {props: true}],
       'react/react-in-jsx-scope': 0,
       'react/destructuring-assignment': 0,
+      'react/prop-types': 0,
     },
   },
 ];
