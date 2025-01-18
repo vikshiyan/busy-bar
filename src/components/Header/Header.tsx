@@ -1,6 +1,8 @@
-import {FC} from 'react';
+import {FC, useState} from 'react';
 import './Header.scss';
 import {VideoBackground} from '../VideoBackground';
+
+// import burger_icon from '../../images/icon__burger.svg';
 
 import icon_cloud from '../../images/icon-cloud.svg';
 import icon_for_cloud from '../../images/icon-for-cloud.svg';
@@ -8,8 +10,15 @@ import icon_for_cloud from '../../images/icon-for-cloud.svg';
 import first_icon from '../../images/icon-first.svg';
 import second_icon from '../../images/icon-second.svg';
 import third_icon from '../../images/icon-third.svg';
+import {HeaderMobileElements} from './HeaderMobileElements';
+import {MobileMenu} from './MobileMenu';
 
 export const Header: FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
   return (
     <header className='header'>
       <VideoBackground />
@@ -37,23 +46,33 @@ export const Header: FC = () => {
             </a>
           </li>
           <li className='header-nav__item header-nav__item--right'>
-            <a href='#' className='header-nav__link'>
+            <a href='#' className='header-nav__lr'>
               <img
                 src={icon_cloud}
                 alt='icon_cloud'
-                className='header-nav__link-cloud'
+                className='header-nav__lr-cloud'
               />
-              <div className='header-nav__link'>
-                Cloud Access
-                <img src={icon_for_cloud} alt='icon_for_cloud' />
-              </div>
-              <div className='header-nav__link-description'>
-                Log in to Busy Cloud to control your device via API and MQTT
+              <div>
+                <div>
+                  <div className='header-nav__lr-title'>Cloud Access</div>
+                  <img
+                    src={icon_for_cloud}
+                    alt='icon_for_cloud'
+                    className='header-nav__lr-icon'
+                  />
+                </div>
+                <div className='header-nav__lr-description'>
+                  Log in to Busy Cloud to control your device via API and MQTT
+                </div>
               </div>
             </a>
           </li>
         </ul>
       </nav>
+
+      <HeaderMobileElements toggleMenu={toggleMenu} />
+
+      {isMenuOpen && <MobileMenu closeMenu={toggleMenu} />}
 
       <div className='header-content'>
         <h1 className='header-content__title'>
