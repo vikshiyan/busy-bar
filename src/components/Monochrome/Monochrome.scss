@@ -2,22 +2,64 @@
 
 .monochrome {
   position: relative;
- &__background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 320px;
-  height: 370px;
-  object-fit: contain; // Задати розтягування для покриття екрану
-  z-index: 1;
-  transform: scale(1.1); // Збільшити масштаб
- }
+  background-color: $monochrome-background-color;
+
+
+  &__wrapper {
+    position: relative;
+    width: 100vw;
+    height: 52vh;
+    padding: 0;
+  }
+
+  &__background {
+    position:absolute;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 57%;
+  }
+
+  &__info {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding-inline: 10px;
+  }
 
   &__title {
-    // Додайте стилі для заголовка
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 30px;
   }
 
   &__subtitle {
-    // Додайте стилі для підзаголовка
+    font-size: 14px;
+    margin-bottom: 200px;
+    line-height: 26px;
   }
+
+  &__display {
+    &-icon {
+      width: 46px;
+      height: 24px;
+    }
+
+    &-title { 
+      font-weight: 600;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    &-subtitle {
+      font-weight: 600;
+      font-size: 12px;
+      color: $second-text-color;
+    }
+
+  }
+
+
 }
+

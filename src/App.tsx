@@ -1,5 +1,5 @@
 import './App.scss';
-import {Footer} from './components/Footer';
+// import {Footer} from './components/Footer';
 import {Header} from './components/Header';
 import {LiveBusy} from './components/LiveBusy';
 import {ManualControls} from './components/ManualControls';
@@ -16,7 +16,7 @@ export function App() {
       <ManualControls />
       <Monochrome />
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

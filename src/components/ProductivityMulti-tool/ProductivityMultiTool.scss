@@ -2,7 +2,6 @@
 
 .productivity-display {
   background-color: $main-background-color;
-  margin-bottom: 30px; 
 
   @include mobile-between-320-375 {
     margin-bottom: 50px;
@@ -45,11 +44,11 @@
 }
   &__block {
     display: block;
-    margin: 0 auto; // для центрування по ширині
-    position: absolute; // Додано для абсолютного позиціонування
-    top: 50%; // Центрування по вертикалі
-    left: 81%; // Центрування по горизонталі
-    transform: translate(-50%, -50%) rotate(270deg); // Центрування з урахуванням обертання
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 81%;
+    transform: translate(-50%, -50%) rotate(270deg);
     width: 646px;
 
     @include mobile-320 {
@@ -65,8 +64,7 @@
 
       display: flex;
       align-items: center;
-      top: none; // Центрування по вертикалі
-      left: none; // Центрування по горизонталі
+   
     }
     @include on-desktop {
       grid-column: 5 / 11;
@@ -80,10 +78,6 @@
 
    display: block;
     width: 100%;
-    // height: auto; 
-    // transform: rotate(90deg);
-    // object-fit: contain;
-    // margin-bottom: 20px;
 
     @include on-desktop {
       width: 100%;
@@ -91,10 +85,14 @@
     }
   }
 
+  &__first-block {
+    margin-top: 70px;
+  }
+
   &__item {
     background-color: $white-color;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 10%;
     padding: 30px 20px ;
 
@@ -176,12 +174,8 @@
     }
 
     &-table {
-      margin-bottom: 50px;
       width: 100%;
 
-      @include mobile-between-320-375 {
-        margin-bottom: 60px;
-      }
       
       @include on-tablet {
        height: 600px;
