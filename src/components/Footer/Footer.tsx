@@ -7,38 +7,42 @@ import icon_x from '../../images/Footer/x.svg';
 import icon_tiktok from '../../images/Footer/tiktok.svg';
 import icon_youtube from '../../images/Footer/youtube.svg';
 
+import flipper_devices from '../../images/Footer/flipper_devices_logo.svg';
+
 export const Footer: FC = () => {
   return (
     <div className='footer'>
-      <nav className='footer-nav'>
-        <ul className='footer-nav__list'>
-          <li className='footer-nav__item'>
-            <a href='#' className='footer-nav__link'>
+      <nav className='footer__nav'>
+        <ul className='footer__nav-list'>
+          <li className='footer__nav-item'>
+            <a href='#' className='footer__nav-link'>
               Shop
             </a>
           </li>
-          <li className='footer-nav__item'>
-            <a href='#' className='footer-nav__link'>
+          <li className='footer__nav-item'>
+            <a href='#' className='footer__nav-link'>
               Downloads
             </a>
           </li>
-          <li className='footer-nav__item'>
-            <a href='#' className='footer-nav__link'>
+          <li className='footer__nav-item'>
+            <a href='#' className='footer__nav-link'>
               Blog
             </a>
           </li>
-          <li className='footer-nav__item'>
-            <a href='#' className='footer-nav__link'>
+        </ul>
+        <ul className='footer__nav-list'>
+          <li className='footer__nav-item'>
+            <a href='#' className='footer__nav-link'>
               About Us
             </a>
           </li>
-          <li className='footer-nav__item'>
-            <a href='#' className='footer-nav__link'>
+          <li className='footer__nav-item'>
+            <a href='#' className='footer__nav-link'>
               Contacts
             </a>
           </li>
-          <li className='footer-nav__item'>
-            <a href='#' className='footer-nav__link'>
+          <li className='footer__nav-item'>
+            <a href='#' className='footer__nav-link'>
               Privacy Policy
             </a>
           </li>
@@ -65,16 +69,24 @@ export const Footer: FC = () => {
       </div>
 
       <div className='footer__wrapper'>
-        <img src='' alt='' className='footer__image' />
+        <img
+          src={flipper_devices}
+          alt='flipper devices'
+          className='footer__image'
+        />
       </div>
 
-      <div className='footer__texts'>
-        <p className='footer__item'>Designed by Flipper Devices Inc.</p>
-        <p className='footer__item'>
-          © 2024. All rights reserved.2803 Philadelphia Pike, Suite B #551
+      <div className='footer__text'>
+        <p className='footer__text-item'>Designed by Flipper Devices Inc.</p>
+        <p className='footer__text-item'>© 2024. All rights reserved.</p>
+      </div>
+
+      <div className='footer__text'>
+        <p className='footer__text-item'>
+          2803 Philadelphia Pike, Suite B #551
         </p>
-        <p className='footer__item'>Claymont, DE 19703, USA</p>
-        <p className='footer__item'>D-U-N-S number: 11-765-8681</p>
+        <p className='footer__text-item'>Claymont, DE 19703, USA</p>
+        <p className='footer__text-item'>D-U-N-S number: 11-765-8681</p>
       </div>
     </div>
   );

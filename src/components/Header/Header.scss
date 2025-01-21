@@ -8,7 +8,7 @@
   background-color: $header-background-color;
   padding-bottom: 50px;
 
-  &-nav {
+  &__nav {
     color: $second-text-color;
 
     @include on-tablet {
@@ -21,7 +21,7 @@
       margin-bottom: 260px;
     }
   
-    &__list {
+    &-list {
       display: flex;
       padding: 40px;
       width: 100%;
@@ -29,11 +29,10 @@
       gap: 20px;
     }
   
-    &__item {
+    &-item {
       display: flex;
       justify-content: space-between;
   
-      
       @include on-desktop {
         font-size: 20px;
       }
@@ -45,7 +44,7 @@
       }
     }
 
-    &__link {
+    &-link {
       text-decoration: underline;
       font-size: 20px;
 
@@ -55,7 +54,7 @@
       }
     }
 
-    &__lr {
+    &-lr {
       display: flex;
       
       &-title {
@@ -106,15 +105,14 @@
     }
   }
 
- 
-  &-content {
+  &__content {
     display: flex; 
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     
-    &__title {
+    &-title {
       margin: 0 auto;
       line-height: 30px;
       margin-bottom: 20px;
@@ -145,13 +143,12 @@
       }
     }
 
-    &__wrapper-button {
+    &-wrapper-button {
       display: flex;
       justify-content: center;
-   
     }
 
-    &__button {
+    &-button {
       color: $white-color;
       line-height: 1.2;
       font-weight: 400;
@@ -161,15 +158,13 @@
       background-position: center center;
       border-color: transparent;
       border-style: solid;
-      transition: background-color 0.03s ease-in-out,color 0.03s ease-in-out,border-color 0.03s ease-in-out;
+      transition: background-color 0.03s ease-in-out, color 0.03s ease-in-out, border-color 0.03s ease-in-out;
       width: 143px;
       height: 55px;
-      
       margin-bottom: 20px;
 
       @include on-tablet {
         margin-bottom: 50px;
-        
       }
 
       @include on-desktop {
@@ -184,8 +179,9 @@
     }
   }
 
-  &-footer{
+  &__footer {
     color: $second-text-color;
+    padding-inline: 10px;
     
     @include on-desktop {
       display: flex;
@@ -193,7 +189,7 @@
       justify-content: space-between;
     }
     
-    &__item {
+    &-item {
       padding-block: 10px;
       display: flex;
       width: 100%;
@@ -201,7 +197,6 @@
       @include on-tablet {
         padding: 5px;
       }
-        
 
       @include on-desktop {
         display: flex;
@@ -211,16 +206,16 @@
       }
     }
 
-    &__icon {
+    &-icon {
       width: 61px;
       height: 61px;
     }
 
-    &__info {
+    &-info {
       padding-left: 30px;
     }
 
-    &__titile {
+    &-title {
       margin-bottom: 8px;
 
       @include on-tablet {
@@ -233,7 +228,7 @@
       }
     }
 
-    &__description {
+    &-description {
       margin-bottom: 10px;
       font-size: 13px;
 
@@ -246,8 +241,4 @@
       }
     }
   }
-
 }
-  
-
-  
