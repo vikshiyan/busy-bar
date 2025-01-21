@@ -5,6 +5,14 @@
   color: $white-color;
   padding: 40px 15px 10px 15px;
 
+  @include mobile-between-320-375 {
+    padding: 40px 35px 10px 35px;
+  }
+
+  @include mobile-between-375-425 {
+    padding: 40px 50px 50px 50px;
+  }
+
   &__nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

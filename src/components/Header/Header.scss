@@ -117,6 +117,16 @@
     @include mobile-320 {
       margin-top: 250px;
     }
+
+    @include mobile-between-320-375 {
+      margin-top: 290px;
+    }
+
+    @include mobile-between-375-425 {
+      margin-top: 320px;
+    }
+
+
     
     &-title {
       margin: 0 auto;
