@@ -10,11 +10,12 @@ type Props = {
 export const HeaderMobileElements: React.FC<Props> = ({toggleMenu}) => {
   return (
     <div className='mobile-header'>
-      <img src={icon_busy} alt='icon busy' className='mobile-header__icon' />
-
-      <button className='mobile-header__burger-button' onClick={toggleMenu}>
-        <img src={icon_burger} alt='icon burger' />
-      </button>
+      <div className='mobile-header__container'>
+        <img src={icon_busy} alt='icon busy' className='mobile-header__icon' />
+        <button className='mobile-header__burger-button' onClick={toggleMenu}>
+          <img src={icon_burger} alt='icon burger' />
+        </button>
+      </div>
     </div>
   );
 };

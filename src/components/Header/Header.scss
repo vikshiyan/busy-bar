@@ -11,6 +11,8 @@
   &__nav {
     color: $second-text-color;
 
+  
+
     @include on-tablet {
       height: 60px;
       margin-bottom: 450px;
@@ -111,6 +113,10 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+
+    @include mobile-320 {
+      margin-top: 250px;
+    }
     
     &-title {
       margin: 0 auto;

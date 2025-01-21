@@ -1,11 +1,19 @@
 @import'../../../styles/main.scss';
 
 .mobile-header {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 10px;
-  margin-bottom: 250px;
+ 
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
   
   @include on-tablet {
     display: none; 
