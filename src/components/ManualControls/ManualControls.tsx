@@ -52,10 +52,10 @@ export const ManualControls: FC = () => {
               </div>
             </div>
 
-            <svg
+            <svg // svg for mobileS
               xmlns='http://www.w3.org/2000/svg'
               viewBox='5855 4742 213.6 300'
-              className='controls__svg'
+              className='controls__svg-mobileS'
             >
               <path
                 fill='transparent'
@@ -84,7 +84,6 @@ export const ManualControls: FC = () => {
                 fillRule='evenodd'
                 d='M 5905 4925 V 4945 H 5956 V 4965'
               ></path>
-
               <path
                 fill='transparent'
                 stroke='#000000'
@@ -92,6 +91,102 @@ export const ManualControls: FC = () => {
                 strokeWidth='1'
                 strokeOpacity='1'
                 d='M 5895 4899.5 H 5859.5 V 4965'
+              ></path>
+            </svg>
+            <svg // svg for mobileM
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='5855 4742 213.6 300'
+              className='controls__svg-mobileM'
+            >
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                fillRule='evenodd'
+                d='M 5894 4852 H 5865 V 4800'
+              ></path>
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                fillRule='evenodd'
+                d='M 5905 4822 V 4810 H 5977 V 4795'
+              ></path>
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                fillRule='evenodd'
+                d='M 5904.5 4930 V 4945 H 5977 V 4970'
+              ></path>
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 5895 4903 H 5859.5 V 4965'
+              ></path>
+            </svg>
+            <svg // svg for mobileL
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='5855 4742 213.6 300'
+              className='controls__svg-mobileL'
+            >
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                fillRule='evenodd'
+                d='M 5893.99 4850.24 H 5865 V 4795'
+              ></path>
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                fillRule='evenodd'
+                d='M 5906.5 4822 V 4810 H 6000 V 4795'
+              ></path>
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                fillRule='evenodd'
+                d='M 5906 4932 V 4945 H 6001 V 4976'
+              ></path>
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 5895 4899.5 H 5859.5 V 4976'
+              ></path>
+            </svg>
+            <svg // svg for tablet
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='5855 4742 213.6 300'
+              className='controls__svg-tablet'
+            >
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 5995 4812 V 4925'
               ></path>
             </svg>
             <img
@@ -148,10 +243,10 @@ export const ManualControls: FC = () => {
               </h4>
             </div>
           </div>
-          <svg
+          <svg // svg for mobileS
             xmlns='http://www.w3.org/2000/svg'
             viewBox='5855 4742 213.6 300'
-            className='controls__svg'
+            className='controls__svg-mobileS'
           >
             <path
               fill='transparent'
@@ -159,7 +254,49 @@ export const ManualControls: FC = () => {
               fillOpacity='1'
               strokeWidth='1'
               strokeOpacity='1'
-              d='M 6030 4822 V 4910'
+              d='M 5995 4812 V 4925'
+            ></path>
+          </svg>
+          <svg // svg for mobileM
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='5855 4742 213.6 300'
+            className='controls__svg-mobileM'
+          >
+            <path
+              fill='transparent'
+              stroke='#000000'
+              fillOpacity='1'
+              strokeWidth='1'
+              strokeOpacity='1'
+              d='M 6020 4812 V 4925'
+            ></path>
+          </svg>
+          <svg // svg for mobileL
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='5855 4742 213.6 300'
+            className='controls__svg-mobileL'
+          >
+            <path
+              fill='transparent'
+              stroke='#000000'
+              fillOpacity='1'
+              strokeWidth='1'
+              strokeOpacity='1'
+              d='M 6050 4812 V 4925'
+            ></path>
+          </svg>
+          <svg // svg for tablet
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='5855 4742 213.6 300'
+            className='controls__svg-tablet'
+          >
+            <path
+              fill='transparent'
+              stroke='#000000'
+              fillOpacity='1'
+              strokeWidth='1'
+              strokeOpacity='1'
+              d='M 5995 4812 V 4925'
             ></path>
           </svg>
           <div className='controls__photo-2-wrapper'>
@@ -171,10 +308,10 @@ export const ManualControls: FC = () => {
           </div>
         </div>
         <div className='controls__lines-1'>
-          <svg
+          <svg // svg for mobileS
             xmlns='http://www.w3.org/2000/svg'
             viewBox='5855 4742 269.2 378'
-            className='controls__svg'
+            className='controls__svg-mobileS'
           >
             <path
               fill='transparent'
@@ -182,7 +319,7 @@ export const ManualControls: FC = () => {
               fillOpacity='1'
               strokeWidth='1'
               strokeOpacity='1'
-              d='M 5920 4746 H 5865 V 4840'
+              d='M 5920 4746 H 5875 V 4840'
             ></path>
             <path
               fill='transparent'
@@ -190,7 +327,73 @@ export const ManualControls: FC = () => {
               fillOpacity='1'
               strokeWidth='1'
               strokeOpacity='1'
-              d='M 5948 4940 V 5040'
+              d='M 5957 4935 V 5040'
+            ></path>
+          </svg>
+          <svg // svg for mobileM
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='5855 4742 269.2 378'
+            className='controls__svg-mobileM'
+          >
+            <path
+              fill='transparent'
+              stroke='#000000'
+              fillOpacity='1'
+              strokeWidth='1'
+              strokeOpacity='1'
+              d='M 5945 4746 H 5925 V 4840'
+            ></path>
+            <path
+              fill='transparent'
+              stroke='#000000'
+              fillOpacity='1'
+              strokeWidth='1'
+              strokeOpacity='1'
+              d='M 6006 4935 V 5040'
+            ></path>
+          </svg>
+          <svg // svg for mobileL
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='5855 4742 269.2 378'
+            className='controls__svg-mobileL'
+          >
+            <path
+              fill='transparent'
+              stroke='#000000'
+              fillOpacity='1'
+              strokeWidth='1'
+              strokeOpacity='1'
+              d='M 6030 4790 V 4818 H 5968 V 4840'
+            ></path>
+            <path
+              fill='transparent'
+              stroke='#000000'
+              fillOpacity='1'
+              strokeWidth='1'
+              strokeOpacity='1'
+              d='M 6051 4935 V 5020 H 5960 V 5045'
+            ></path>
+          </svg>
+          <svg // svg for tablet
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='5855 4742 269.2 378'
+            className='controls__svg-tablet'
+          >
+            <path
+              fill='transparent'
+              stroke='#000000'
+              fillOpacity='1'
+              strokeWidth='1'
+              strokeOpacity='1'
+              d='M 5920 4746 H 5875 V 4840'
+            ></path>
+            <path
+              fill='transparent'
+              stroke='#000000'
+              fillOpacity='1'
+              strokeWidth='1'
+              strokeOpacity='1'
+              d='M 5957 4935 V 5040'
             ></path>
           </svg>
           <div className='controls__button-back'>

@@ -1,7 +1,9 @@
 import {FC, useState} from 'react';
-
+import axios from 'axios';
+import IntlTelInput from 'intl-tel-input/react';
 import './QuizBlock.scss';
 import {questions} from '../../utils/Questions';
+import {Slide, ToastContainer, toast} from 'react-toastify';
 
 const initialFormData = {
   firstName: '',
@@ -10,20 +12,22 @@ const initialFormData = {
   email: '',
 };
 
-// const initialErrors = {
-//   firstName: false,
-//   lastName: false,
-//   telefon: false,
-//   email: false,
-// };
-
+const errorMap = [
+  'Invalid number',
+  'Invalid country code',
+  'Too short',
+  'Too long',
+  'Invalid number',
+];
 export const QuizBlock: FC = () => {
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [items, setItems] = useState<string[]>([]);
   const [finished, setFinished] = useState(false);
   const [newPerson, setNewPerson] = useState(initialFormData);
-  // const [errors, setErrors] = useState(initialErrors);
-  // const phoneInputRef = useRef<HTMLInputElement>(null);
+  const [isValid, setIsValid] = useState<boolean | null>(null);
+  const [number, setNumber] = useState<string | null>(null);
+  const [errorCode, setErrorCode] = useState<number | null>(null);
+  const [notice, setNotice] = useState<string | null>(null);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const {name, value} = event.target;
@@ -49,14 +53,26 @@ export const QuizBlock: FC = () => {
     setFinished(false);
   };
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    const newPersonWithId = {
+    const dataToSubmit = {
       ...newPerson,
-      id: Date.now().toString(),
+      answers: items,
     };
-    console.log('New Person:', newPersonWithId, items);
-    handleReset();
+    try {
+      const response = await axios.post(
+        'https://httpbin.org/post',
+        dataToSubmit
+      );
+      console.log('Data submitted successfully:', response.data);
+      toast.success('Data submitted successfully!');
+      // Handle successful submission (e.g., show a success message, reset form, etc.)
+      handleReset();
+    } catch (error) {
+      console.error('Error submitting data:', error);
+      toast.error('Error submitting data!');
+      // Handle error (e.g., show an error message)
+    }
   };
 
   return (
@@ -105,13 +121,23 @@ export const QuizBlock: FC = () => {
               className='quiz__input'
               required
             />
-            <input
+            {/* <input
               type='tel'
               name='telefon'
-              // ref={phoneInputRef}
+              value={newPerson.telefon}
+              onChange={handleChange}
               placeholder='Telefon'
               className='quiz__input'
               required
+              ref={telefonInputRef}
+            /> */}
+            <IntlTelInput
+              onChangeNumber={setNumber}
+              onChangeValidity={setIsValid}
+              onChangeErrorCode={setErrorCode}
+              initOptions={{
+                initialCountry: 'ua',
+              }}
             />
             <input
               type='email'
@@ -127,9 +153,23 @@ export const QuizBlock: FC = () => {
                 Submit
               </button>
             </div>
+            {notice && <div className='notice'>{notice}</div>}
           </form>
         </div>
       )}
+      <ToastContainer
+        position='top-right'
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme='light'
+        transition={Slide}
+      />
     </div>
   );
 };
