@@ -1,35 +1,111 @@
-@use'../../styles/main.scss';
-@use'../../styles/variables' as vars;
-@use '../../styles/mixins' as mixins;
+@import '../../styles/main.scss';
 
 .productivity-display {
-  
-  margin-top: 50px; //?
+  background-color: $main-background-color;
   margin-bottom: 30px; 
-  @include mixins.page-grid;
+
+  @include mobile-between-320-375 {
+    margin-bottom: 50px;
+  }
+
+  @include page-grid;
 
   &__main-title {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 48px;
+    font-size: 56px;
 
-    
+    @include mobile-to-375 {
+      font-size: 48px;
+    }
+
+    @include on-tablet {
+      grid-column: 2 / 6;
+    }
+
+    @include on-desktop {
+      margin-bottom: 50px;
+      grid-column: 4 / 10;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 646px;
+    position: relative;
+
+    @include on-tablet {
+      justify-content: center;
+      align-items: center;
+      grid-column: 3 / 5;
+    }
+}
+  &__block {
+    display: block;
+    margin: 0 auto; // для центрування по ширині
+    position: absolute; // Додано для абсолютного позиціонування
+    top: 50%; // Центрування по вертикалі
+    left: 81%; // Центрування по горизонталі
+    transform: translate(-50%, -50%) rotate(270deg); // Центрування з урахуванням обертання
+    width: 646px;
+
+    @include mobile-320 {
+      left: 59%;
+    }
+
+    @include mobile-between-320-375 {
+      left: 70%;
+    }
+
+
+    @include on-tablet {
+
+      display: flex;
+      align-items: center;
+      top: none; // Центрування по вертикалі
+      left: none; // Центрування по горизонталі
+    }
+    @include on-desktop {
+      grid-column: 5 / 11;
+      display: flex;
+      align-items: center;
+      transform: translate(-50%, -50%) rotate(0deg); 
+    }
   }
 
   &__photo {
+
+   display: block;
     width: 100%;
-    height: auto; 
+    // height: auto; 
     // transform: rotate(90deg);
-    object-fit: contain;
-    margin-bottom: 20px;
+    // object-fit: contain;
+    // margin-bottom: 20px;
+
+    @include on-desktop {
+      width: 100%;
+      
+    }
   }
 
   &__item {
-    background-color: vars.$white-color;
+    background-color: $white-color;
     width: 100%;
     margin-bottom: 10px;
     border-radius: 10%;
     padding: 30px 20px ;
+
+    @include on-tablet {
+      grid-column: 2 / 6;
+    }
+
+    @include on-desktop {
+      grid-column: 1 / 5;
+      width: 391px;
+    }
   }
 
   &__heading {
@@ -43,14 +119,24 @@
 
 
   &__title {
-    font-size: 32px;
-    
+    font-size: 40px;
+
+    @include on-desktop {
+      font-size: 36px;
+    }
   }
 
   &__subtitle {
     font-size: 18px;
     margin-bottom: 13px;
 
+    @include mobile-to-375 {
+      font-size: 16px;
+    }
+
+    @include on-desktop {
+      font-size: 16px;
+    }
   }
   
   &__dot-text {
@@ -61,25 +147,45 @@
   
   &__dot {
     top: 0;
-    margin-right: 10px; 
-  
-    &__text {
-      font-size: 14px; 
-    }
+    margin-right: 10px;
+    color: $dot-text-color;
+  }
+
+  &__text {
+    color: $dot-text-color;
+    font-size: 14px; 
+    font-weight: 500;
+
     
-    &__icon-img {
-      width: 100%;
+    @include mobile-to-375 {
+      font-size: 13px;
+    }
+
+    @include on-desktop {
+      font-size: 12px;
     }
   }
   
   &__developer {
-
     &-section {
       position: relative;
+
+      @include on-tablet {
+        grid-column: 2 / 6;
+      }
     }
 
     &-table {
+      margin-bottom: 50px;
       width: 100%;
+
+      @include mobile-between-320-375 {
+        margin-bottom: 60px;
+      }
+      
+      @include on-tablet {
+       height: 600px;
+      }
     }
 
     &-title {
@@ -92,6 +198,11 @@
       font-family: "JetBrains Mono", Arial, sans-serif;
       font-size: 22px;
       font-weight: 500;
+
+      @include on-tablet {
+        top: 35px;
+        left: 60px;
+      }
     }
 
     &-container {
@@ -100,25 +211,64 @@
       padding-left: 20px;
       padding-right: 15px;
       top: 90px;
-      // left: 24px;
-      // right: 14px;
       gap: 23px;
+
+      @include on-tablet {
+        top: 120px;
+        left: 50px;
+        gap: 100px;
+
+      }
     }
 
     &-item {
       display: flex;
       align-items: center;
 
-      padding: 8px 0;
+      padding: 0 0 8px 0;
       max-width: 174px;
       word-break: break-word;
     }
     
 
     &-text {
-        font-family: "JetBrains Mono", Arial, sans-serif;
-        font-size: 13px;
-        font-weight: 500;
+      font-family: "JetBrains Mono", Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+
+      @include on-tablet {
+        font-size: 16px;
       }
+    }
+
+      @include mobile-between-320-375 {
+        &-title {
+          font-size: 18px;
+        }
+  
+        &-container {
+          top: 70px;
+        }
+  
+        &-item {
+          padding: 5px 0;
+        }
+    }
+
+      @include mobile-320 {
+        &-title {
+          font-size: 14px;
+        }
+  
+        &-container {
+          top: 60px;
+        }
+
+        &-text {
+          font-size: 11px;
+        }
+    }
   }
 }
+
+

@@ -1,28 +1,80 @@
-@use './variables' as vars;
-
 @mixin on-tablet {
-  @media (min-width: vars.$tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     @content;
   }
 }
 
 @mixin on-desktop {
-  @media (min-width: vars.$desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     @content;
   }
 }
 
 @mixin only-mobile {
-  @media (max-width: calc(vars.$tablet-min-width - 1px)) {
+  @media (max-width: calc($tablet-min-width - 1px)) {
     @content;
   }
 }
 
+@mixin mobile-between-320-375 {
+  @media (min-width: calc(#{$small-mobile} + 1px)) and (max-width: $medium-mobile) {
+    @content;
+  }
+}
 
+@mixin mobile-to-375 {
+  @media (max-width: $medium-mobile) {
+    @content;
+  }
+}
+
+@mixin mobile-320 {
+  @media (max-width: $small-mobile) {
+    @content;
+  }
+}
+
+// @mixin page-grid {
+//   $columns: 1;
+
+//   display: grid;
+//   justify-items: center;
+//   justify-content: center;
+//   row-gap: 40px;
+//   grid-template-columns: repeat($columns, 1fr);
+
+//   @include on-tablet {
+//     $columns: 2;
+
+//     column-gap: 16px;
+//     grid-template-columns: repeat($columns, 1fr);
+//   }
+
+//   @media (min-width: 768px) {
+//     $columns: 3;
+
+//     grid-template-columns: repeat($columns, 1fr);
+//   }
+
+//   @include on-desktop {
+//     $columns: 4;
+
+//     grid-template-columns: repeat($columns, 1fr);
+//   }
+// }
 
 @mixin page-grid {
   display: grid;
   column-gap: 24px;
   grid-template-columns: repeat(1, 1fr);
 
+  @include on-tablet {
+    grid-template-columns: repeat(6, 1fr);
+    // column-gap: 24px;
+  }
+
+  @include on-desktop {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 40px;
+  }
 }

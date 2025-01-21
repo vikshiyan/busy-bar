@@ -1,7 +1,7 @@
 import './HeaderMobileElements.scss';
 
-import icon_burger from '../../../images/icon__burger.svg';
-import icon_busy from '../../../images/icon-Busy.svg';
+import icon_burger from '../../../images/Header/icon__burger.svg';
+import icon_busy from '../../../images/Header/icon-Busy.svg';
 
 type Props = {
   toggleMenu: () => void;

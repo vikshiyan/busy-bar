@@ -1,0 +1,23 @@
+@import '../../styles/main.scss';
+
+.monochrome {
+  position: relative;
+ &__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 370px;
+  object-fit: contain; // Задати розтягування для покриття екрану
+  z-index: 1;
+  transform: scale(1.1); // Збільшити масштаб
+ }
+
+  &__title {
+    // Додайте стилі для заголовка
+  }
+
+  &__subtitle {
+    // Додайте стилі для підзаголовка
+  }
+}

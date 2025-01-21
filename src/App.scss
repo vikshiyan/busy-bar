@@ -1,21 +1,24 @@
-@use './styles/variables' as vars;
-@use './styles/mixins' as mixins;
+@import './styles/main.scss';
 
 .page {
   position: relative;
-  color: vars.$main-text-color;
-  background-color: vars.$main-background-color;
+  color: $main-text-color;
 }
 
 .container {
   padding-inline: 10px;
 
-  @include mixins.on-tablet {
+  @include on-tablet {
     padding-inline: 24px;
   }
 
-  @include mixins.on-desktop {
-    padding-top: 20px;
+  @include on-desktop {
+    // padding-top: 20px;
+    padding-inline: 20px;
+    // max-width: 1136px;
     margin: 0 auto;
   }
 }
+
+
+

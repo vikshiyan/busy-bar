@@ -1,4 +1,4 @@
-@use '../../styles/main.scss';
+@import '../../styles/main.scss';
 
 .video-background {
   position: absolute;
@@ -21,13 +21,13 @@
 
 
 }
-@mixin on-desktop {
+@include on-desktop {
   .video-background {
     height: 100vh; // Гарантовано займає весь екран на десктопі
   }
 }
 
-@mixin only-mobile{
+@include only-mobile{
   .video-background {
     height: auto; 
     min-height: 60vh;

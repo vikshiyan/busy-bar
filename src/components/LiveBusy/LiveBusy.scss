@@ -1,0 +1,31 @@
+@import '../../styles/main.scss';
+
+.busy {
+  background-color: $white-color; 
+
+  &__title {
+    margin-top: 50px;
+    line-height: 52px;
+    font-size: 48px;
+    text-align: center;
+    
+  }
+
+  &__img {
+    overflow: hidden; 
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  &__photo {
+    display: block;
+    width: 500px;
+    object-fit: cover;
+    transform: scale(1) translateY(15%) translateX(-95px);
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}

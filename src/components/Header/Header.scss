@@ -1,22 +1,24 @@
-@use '../../styles/main.scss';
-@use '../../styles/variables.scss' as vars;
+@import '../../styles/main.scss';
+
 .header {
   position: relative;
   width: 100%;
   z-index: 1;
   overflow: hidden;
+  background-color: $main-background-color;
+  padding-bottom: 50px;
 
   &-nav {
-    color: vars.$second-text-color;
+    color: $second-text-color;
 
-    @mixin on-tablet {
+    @include on-tablet {
       height: 60px;
-      margin-bottom: 320px;
+      margin-bottom: 450px;
     }
 
-    @mixin on-desktop {
+    @include on-desktop {
       height: 150px;
-      margin-bottom: 300px;
+      margin-bottom: 260px;
     }
   
     &__list {
@@ -32,7 +34,7 @@
       justify-content: space-between;
   
       
-      @mixin on-desktop {
+      @include on-desktop {
         font-size: 20px;
       }
   
@@ -63,7 +65,7 @@
         font-size: 18px;
         padding-right: 8px;
 
-        @mixin on-desktop {
+        @include on-desktop {
           font-size: 20px;
         }
       }
@@ -73,7 +75,7 @@
         height: 49px;
         padding-right: 8px;
 
-        @mixin on-desktop {
+        @include on-desktop {
           width: 90px;
           height: 59px;
           padding-right: 13px;
@@ -84,7 +86,7 @@
         width: 15px;
         height: 15px;
 
-        @mixin on-desktop {
+        @include on-desktop {
           width: 18px;
           height: 18px;
         }
@@ -99,7 +101,7 @@
       }
     }
 
-    @mixin only-mobile {
+    @include only-mobile {
       display: none;
     }
   }
@@ -110,24 +112,24 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     
     &__title {
       margin: 0 auto;
-      font-size: 16px;
-      
       line-height: 30px;
-      font-weight: 400;
       margin-bottom: 20px;
-      width: 300px;
+      width: 90%;
 
-      @mixin on-tablet {
+      @include mobile-to-375 {
+        font-size: 16px;
+      }
+
+      @include on-tablet {
         width: 550px;
         margin-bottom: 40px;
-        font-size: 18px;
-
       }
     
-      @mixin on-desktop {
+      @include on-desktop {
         width: 680px;
         margin-bottom: 70px;
         font-size: 20px;
@@ -137,7 +139,7 @@
         font-weight: 700;
         font-size: 18px;
   
-        @mixin on-desktop {
+        @include on-desktop {
           font-size: 20px;
         }
       }
@@ -150,12 +152,12 @@
     }
 
     &__button {
-      color: vars.$white-color;
+      color: $white-color;
       line-height: 1.2;
       font-weight: 400;
       text-transform: uppercase;
       border-radius: 8px;
-      background-color: vars.$button-color;
+      background-color: $button-color;
       background-position: center center;
       border-color: transparent;
       border-style: solid;
@@ -165,27 +167,27 @@
       
       margin-bottom: 20px;
 
-      @mixin on-tablet {
+      @include on-tablet {
         margin-bottom: 50px;
         
       }
 
-      @mixin on-desktop {
+      @include on-desktop {
         width: 200px;
         height: 72px;
         margin-bottom: 150px;
       }
 
       &:hover {
-        background-color: vars.$button-color-hover;
+        background-color: $button-color-hover;
       }
     }
   }
 
   &-footer{
-    color: vars.$second-text-color;
-
-    @mixin on-desktop {
+    color: $second-text-color;
+    
+    @include on-desktop {
       display: flex;
       width: 100%;
       justify-content: space-between;
@@ -196,15 +198,15 @@
       display: flex;
       width: 100%;
 
-      @mixin on-tablet {
+      @include on-tablet {
         padding: 5px;
       }
         
 
-      @mixin on-desktop {
+      @include on-desktop {
         display: flex;
         width: 100%;
-        padding: 30px;
+        padding: 20px 30px;
         border: solid 1px #d9d9d9;
       }
     }
@@ -219,27 +221,27 @@
     }
 
     &__titile {
+      margin-bottom: 8px;
 
-      @mixin on-tablet {
+      @include on-tablet {
         font-size: 18px;
       }
 
-      @mixin on-desktop {
+      @include on-desktop {
         font-size: 20px;
         margin-bottom: 10px;
       }
-
     }
 
     &__description {
       margin-bottom: 10px;
       font-size: 13px;
 
-      @mixin on-tablet {
-        font-size: 14px;
+      @include on-tablet {
+        font-size: 18px;
       }
 
-      @mixin on-desktop {
+      @include on-desktop {
         font-size: 16px;
       }
     }

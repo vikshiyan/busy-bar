@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_Слой_1" data-name="Слой 1" viewBox="0 0 1000 1000">
+  <line x1="412.82" y1="48.24" x2="587.18" y2="48.24" fill="none" stroke="#a2a2a3" stroke-miterlimit="10" stroke-width="30px"></line>
+  <rect x="449.78" y="57.35" width="99.34" height="55.14" fill="#a2a2a3" stroke="#a2a2a3" stroke-width="30px"></rect>
+  <line x1="777.46" y1="154.47" x2="845.53" y2="222.54" fill="none" stroke="#a2a2a3" stroke-miterlimit="10" stroke-width="25px"></line>
+  <line x1="500" y1="124.04" x2="500" y2="188.51" fill="none" stroke="#a2a2a3" stroke-miterlimit="10" stroke-width="25px"></line>
+  <line x1="127.84" y1="500" x2="188.51" y2="500" fill="none" stroke="#a2a2a3" stroke-miterlimit="10" stroke-width="25px"></line>
+  <line x1="500" y1="872.16" x2="500" y2="811.49" fill="none" stroke="#a2a2a3" stroke-miterlimit="10" stroke-width="25px"></line>
+  <line x1="878.52" y1="500" x2="811.49" y2="500" fill="none" stroke="#a2a2a3" stroke-miterlimit="10" stroke-width="25px"></line>
+  <circle cx="500" cy="500" r="43.43" fill="#a2a2a3" stroke="#a2a2a3" stroke-width="25px"></circle>
+  <line x1="581.15" y1="547.48" x2="246.69" y2="354.38" fill="none" stroke="#a2a2a3" stroke-miterlimit="10" stroke-width="25px"></line>
+  <g>
+    <path d="m166.47,308.07c66.46-115.24,190.93-192.81,333.53-192.81,212.49,0,384.75,172.26,384.75,384.75,0,70.29-18.85,136.17-51.77,192.87" fill="none" stroke="#a2a2a3" stroke-width="25px"></path>
+    <path d="m166.47,308.07c-32.58,56.49-51.22,122.03-51.22,191.93,0,212.49,172.26,384.75,384.75,384.75,142.2,0,266.38-77.15,332.98-191.87" fill="none" stroke="#a2a2a3" stroke-width="25px"></path>
+  </g>
+  <path d="m223.16,294.54c27.45-36.86,62.4-68.35,101.87-91.65,41.02-24.22,87.38-39.75,134.98-45.31v273.25l-236.84-136.3Z" fill="#a2a2a3" stroke="#a2a2a3" stroke-width="25px"></path>
+</svg>
