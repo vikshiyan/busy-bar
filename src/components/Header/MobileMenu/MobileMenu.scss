@@ -1,12 +1,12 @@
-@import '../../../styles/main.scss';
-
+@use '../../../styles/main.scss';
+@use '../../../styles/variables' as vars;
 .mobile-menu {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  background: $white-color;
+  background: vars.$white-color;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -28,11 +28,11 @@
     
 
     &__link {
-      border-bottom: solid 1px $border-color; 
+      border-bottom: solid 1px vars.$border-color; 
       padding: 20px 5px;
 
       &:first-child {
-        border-top: solid 1px $border-color; 
+        border-top: solid 1px vars.$border-color; 
       }
     }
 
@@ -78,7 +78,7 @@
         padding-top: 5px;
         line-height: 19px;
         font-size: 12px;
-        color: $second-text-color;
+        color: vars.$second-text-color;
         width: 70%;
       }
     }  

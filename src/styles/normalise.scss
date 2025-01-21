@@ -22,7 +22,7 @@ h1 {
   font-weight: 500;
   font-size: 18px;
   
-  @include on-desktop {
+  @mixin on-desktop {
     font-size: 20px;
   }
 }

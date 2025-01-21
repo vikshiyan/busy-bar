@@ -1,10 +1,12 @@
-@import '../../styles/main.scss';
+@use'../../styles/main.scss';
+@use'../../styles/variables' as vars;
+@use '../../styles/mixins' as mixins;
 
 .productivity-display {
   
   margin-top: 50px; //?
   margin-bottom: 30px; 
-  @include page-grid;
+  @include mixins.page-grid;
 
   &__main-title {
     text-align: center;
@@ -23,7 +25,7 @@
   }
 
   &__item {
-    background-color: $white-color;
+    background-color: vars.$white-color;
     width: 100%;
     margin-bottom: 10px;
     border-radius: 10%;

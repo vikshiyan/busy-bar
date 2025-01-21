@@ -1,4 +1,4 @@
-@import '../../../styles/main.scss';
+@use '../../../styles/main.scss';
 
 .mobile-header {
   display: flex;
@@ -7,11 +7,11 @@
   padding-inline: 10px;
   margin-bottom: 250px;
   
-  @include on-tablet {
+  @mixin on-tablet {
     display: none; 
   }
 
-  @include on-desktop {
+  @mixin on-desktop {
     display: none; 
   }
 
@@ -20,7 +20,7 @@
     height: 60px;
     display: none; 
     
-    @include only-mobile {
+    @mixin only-mobile {
       display: block;
     }
   }
@@ -31,7 +31,7 @@
     cursor: pointer;
     display: none; 
     
-    @include only-mobile {
+    @mixin only-mobile {
       display: block;
     }
   }
