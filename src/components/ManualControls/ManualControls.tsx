@@ -1,6 +1,4 @@
-/* eslint-disable max-len */
 import {FC} from 'react';
-
 import './ManualControls.scss';
 import manual_controls from '../../images/ManualControls/manual-controls.jpg';
 import icon_busy from '../../images/ManualControls/icon_busy.svg';
@@ -21,7 +19,6 @@ export const ManualControls: FC = () => {
           connecting to PC or mobile app. The large buttons are designed for
           easy use without looking at the device.
         </h3>
-
         <div className='controls__wrapper'>
           <div className='controls__lines-1'>
             <div className='controls__block-1'>
@@ -57,7 +54,7 @@ export const ManualControls: FC = () => {
 
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              viewBox='5855.99365234375 4742.9638671875 838.00634765625 378.0576171875'
+              viewBox='5855 4742 213.6 300'
               className='controls__svg'
             >
               <path
@@ -67,7 +64,7 @@ export const ManualControls: FC = () => {
                 strokeWidth='1'
                 strokeOpacity='1'
                 fillRule='evenodd'
-                d='M 5911.99 4930.24 H 5857 V 4837'
+                d='M 5893.99 4850.24 H 5865 V 4800'
               ></path>
               <path
                 fill='transparent'
@@ -76,7 +73,7 @@ export const ManualControls: FC = () => {
                 strokeWidth='1'
                 strokeOpacity='1'
                 fillRule='evenodd'
-                d='M 5949 4888 V 4860 H 6015 V 4860 V 4837'
+                d='M 5905 4822 V 4810 H 5960 V 4795'
               ></path>
               <path
                 fill='transparent'
@@ -85,7 +82,7 @@ export const ManualControls: FC = () => {
                 strokeWidth='1'
                 strokeOpacity='1'
                 fillRule='evenodd'
-                d='M 5948.52 5075.42 V 5100 H 6033 V 5220'
+                d='M 5905 4925 V 4945 H 5956 V 4965'
               ></path>
 
               <path
@@ -94,7 +91,7 @@ export const ManualControls: FC = () => {
                 fillOpacity='1'
                 strokeWidth='1'
                 strokeOpacity='1'
-                d='M 5925 5028 H 5864 V 5130'
+                d='M 5895 4899.5 H 5859.5 V 4965'
               ></path>
             </svg>
             <img
@@ -102,41 +99,39 @@ export const ManualControls: FC = () => {
               alt='manualcontrols'
               className='controls__photo-1 controls__photo'
             />
-          </div>
-
-          <div className='controls__block-2'>
-            <div className='controls__item'>
-              <div className='controls__text'>
-                <img
-                  src={icon_apps}
-                  alt='icon apps'
-                  className='controls__icon'
-                />
-                <h3 className='controls__heading'>Apps</h3>
+            <div className='controls__block-2'>
+              <div className='controls__item'>
+                <div className='controls__text'>
+                  <img
+                    src={icon_apps}
+                    alt='icon apps'
+                    className='controls__icon'
+                  />
+                  <h3 className='controls__heading'>Apps</h3>
+                </div>
+                <h4 className='controls__description'>
+                  Clock, weather, social media stats (YouTube, Instagram,
+                  TikTok), and more. Supports 3rd-party user applications
+                </h4>
               </div>
-              <h4 className='controls__description'>
-                Clock, weather, social media stats (YouTube, Instagram, TikTok),
-                and more. Supports 3rd-party user applications
-              </h4>
-            </div>
-            <div className='controls__item'>
-              <div className='controls__text'>
-                <img
-                  src={icon_settings}
-                  alt='icon settings'
-                  className='controls__icon'
-                />
-                <h3 className='controls__heading'>Settings</h3>
+              <div className='controls__item'>
+                <div className='controls__text'>
+                  <img
+                    src={icon_settings}
+                    alt='icon settings'
+                    className='controls__icon'
+                  />
+                  <h3 className='controls__heading'>Settings</h3>
+                </div>
+                <h4 className='controls__description'>
+                  Wi-Fi / Bluetooth connections, screen brightness, sound
+                  volume, power saving mode, etc.
+                </h4>
               </div>
-              <h4 className='controls__description'>
-                Wi-Fi / Bluetooth connections, screen brightness, sound volume,
-                power saving mode, etc.
-              </h4>
             </div>
           </div>
         </div>
         <div className='controls__lines-1'>
-        
           <div className='controls__button-start'>
             <img
               src={icon_hand}
@@ -154,19 +149,19 @@ export const ManualControls: FC = () => {
             </div>
           </div>
           <svg
-              xmlns='http://www.w3.org/2000/svg'
-              viewBox='5855 4742 213.6 300'
-              className='controls__svg'
-            >
-              <path
-                fill='transparent'
-                stroke='#000000'
-                fillOpacity='1'
-                strokeWidth='1'
-                strokeOpacity='1'
-                d='M 6030 4822 V 4910'
-              ></path>
-              </svg>
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='5855 4742 213.6 300'
+            className='controls__svg'
+          >
+            <path
+              fill='transparent'
+              stroke='#000000'
+              fillOpacity='1'
+              strokeWidth='1'
+              strokeOpacity='1'
+              d='M 6030 4822 V 4910'
+            ></path>
+          </svg>
           <div className='controls__photo-2-wrapper'>
             <img
               src={manual_controls}
@@ -211,7 +206,7 @@ export const ManualControls: FC = () => {
               Go back in menu and quit apps
             </h4>
           </div>
-        
+
           <img
             src={manual_controls}
             alt='manualcontrols'
@@ -228,7 +223,8 @@ export const ManualControls: FC = () => {
             <div className='controls__scrols-text'>
               <h3 className='controls__scrols-heading'>Scroll wheel</h3>
               <h4 className='controls__description'>
-                Set timer in Busy and Pomodoro modes, navigate in menu, OK button
+                Set timer in Busy and Pomodoro modes, navigate in menu, OK
+                button
               </h4>
             </div>
           </div>

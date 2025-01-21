@@ -29,7 +29,6 @@
   }
 
   &__block {
-
     &-1 {
       display: flex;
       justify-content: space-between;
@@ -48,31 +47,23 @@
   }
 
   &__item {
-
-   
   }
 
   &__text {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-
   }
-
 
   &__icon {
     width: 26px;
     height: 26px;
     padding-right: 10px;
-
-    
   }
 
   &__heading {
     font-size: 18px;
   }
-
-
 
   &__description {
     font-size: 12px;
@@ -80,10 +71,9 @@
 
     margin-bottom: 20px;
   }
-  
+
   &__button-start {
     display: flex;
-    
 
     &-info {
       margin-top: 9px;
@@ -103,7 +93,6 @@
     &-description {
       color: $second-text-color;
       font-size: 13px;
-    
     }
   }
 
@@ -148,8 +137,6 @@
     }
 
     &-text {
-
-    
     }
     &-heading {
       font-size: 18px;
@@ -159,11 +146,9 @@
     &-description {
       color: $second-text-color;
       font-size: 13px;
-    
     }
   }
 
-  
   &__photo-2-wrapper {
     display: flex;
     justify-content: center;
@@ -175,7 +160,7 @@
 
   &__photo {
     width: 100%;
-   
+
     &-1 {
       // width: 100vw;
       height: 25vh;
@@ -183,7 +168,6 @@
       object-position: -4%;
       margin-block: 20px;
       overflow: hidden;
-
     }
 
     &-2 {
@@ -207,7 +191,6 @@
     top: 5px;
     height: 100%;
     pointer-events: none;
-    z-index: 2; 
+    z-index: 2;
   }
-  
 }
