@@ -2,7 +2,6 @@ import {FC, useState} from 'react';
 import './Header.scss';
 import {VideoBackground} from '../VideoBackground';
 
-
 import icon_cloud from '../../images/Header/icon-cloud.svg';
 import icon_for_cloud from '../../images/Header/icon-for-cloud.svg';
 

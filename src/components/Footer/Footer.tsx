@@ -10,7 +10,6 @@ import icon_youtube from '../../images/Footer/youtube.svg';
 export const Footer: FC = () => {
   return (
     <div className='footer'>
-
       <nav className='footer-nav'>
         <ul className='footer-nav__list'>
           <li className='footer-nav__item'>
