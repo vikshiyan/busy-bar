@@ -24,7 +24,10 @@ export const ProductivityMultiTool: FC = () => {
             />
           </div>
         </div>
-        <div className='productivity-display__item'>
+        <div
+          className='productivity-display__item 
+          productivity-display__first-block'
+        >
           <div className='productivity-display__heading'>
             <img
               src={icon_fourth}

@@ -2,11 +2,13 @@
 
 .page {
   position: relative;
-  color: $main-text-color;
+  color: $black-color;
+  overflow-x: hidden;
 }
 
 .container {
   padding-inline: 10px;
+  padding-block: 60px;
 
   @include on-tablet {
     padding-inline: 24px;

@@ -4,7 +4,6 @@
   background-color: $white-color; 
 
   &__title {
-    margin-top: 50px;
     line-height: 52px;
     font-size: 48px;
     text-align: center;
@@ -21,7 +20,7 @@
     display: block;
     width: 500px;
     object-fit: cover;
-    transform: scale(1) translateY(15%) translateX(-95px);
+    transform: scale(1.1) translateY(15%) translateX(-95px);
   }
 
   &__subtitle {

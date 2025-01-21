@@ -96,7 +96,7 @@ export const ManualControls: FC = () => {
             </svg>
             <img
               src={manual_controls}
-              alt='manualcontrols'
+              alt='manual controls'
               className='controls__photo-1 controls__photo'
             />
             <div className='controls__block-2'>
