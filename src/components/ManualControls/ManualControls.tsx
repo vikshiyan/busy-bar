@@ -67,7 +67,7 @@ export const ManualControls: FC = () => {
                 strokeWidth='1'
                 strokeOpacity='1'
                 fillRule='evenodd'
-                d='M 5911.99 4930.24 H 5857 V 4837'
+                d='M 5930 4936 H 5864 V 4840'
               ></path>
               <path
                 fill='transparent'
@@ -76,7 +76,7 @@ export const ManualControls: FC = () => {
                 strokeWidth='1'
                 strokeOpacity='1'
                 fillRule='evenodd'
-                d='M 5949 4888 V 4860 H 6015 V 4860 V 4837'
+                d='M 5949 4888 V 4860 H 6015 V 4860 V 4840'
               ></path>
               <path
                 fill='transparent'
@@ -85,7 +85,7 @@ export const ManualControls: FC = () => {
                 strokeWidth='1'
                 strokeOpacity='1'
                 fillRule='evenodd'
-                d='M 5948.52 5075.42 V 5100 H 6033 V 5220'
+                d='M 5948 5075 V 5100 H 6033 V 5220'
               ></path>
 
               <path
@@ -94,7 +94,7 @@ export const ManualControls: FC = () => {
                 fillOpacity='1'
                 strokeWidth='1'
                 strokeOpacity='1'
-                d='M 5925 5028 H 5864 V 5130'
+                d='M 5930 5028 H 5864 V 5130'
               ></path>
             </svg>
             <img
