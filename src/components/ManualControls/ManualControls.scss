@@ -199,10 +199,10 @@
   }
   &__svg {
     position: absolute;
-    top: 12px;
-    left: 12px;
+    top: 5px;
     height: 100%;
-    pointer-events: none; 
+    pointer-events: none;
+    z-index: 2; 
   }
   
 }
