@@ -3,7 +3,6 @@
 .page {
   position: relative;
   color: $main-text-color;
-  background-color: $main-background-color; 
 }
 
 .container {
@@ -14,8 +13,8 @@
   }
 
   @include on-desktop {
-    padding-top: 20px;
-    // padding-inline: 0;
+    // padding-top: 20px;
+    padding-inline: 20px;
     // max-width: 1136px;
     margin: 0 auto;
   }

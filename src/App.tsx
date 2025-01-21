@@ -1,18 +1,21 @@
 import './App.scss';
 import {Footer} from './components/Footer';
 import {Header} from './components/Header';
+import {LiveBusy} from './components/LiveBusy';
+import {ManualControls} from './components/ManualControls';
+import {Monochrome} from './components/Monochrome';
 import {ProductivityMultiTool} from './components/ProductivityMulti-tool';
 
 export function App() {
-  // const [count, setCount] = useState(0);
-
   return (
     <div id='page-top' className='page'>
       <Header />
 
-      <div className='container'>
-        <ProductivityMultiTool />
-      </div>
+      <ProductivityMultiTool />
+      <LiveBusy />
+      <ManualControls />
+      <Monochrome />
+
       <Footer />
     </div>
   );

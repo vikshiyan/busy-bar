@@ -1,9 +1,9 @@
 import './MobileMenu.scss';
 
-import icon_close from '../../../images/icon_close.svg';
-import icon_arrow from '../../../images/icon__arrow.svg';
+import icon_close from '../../../images/Header/icon_close.svg';
+import icon_arrow from '../../../images/Header/icon__arrow.svg';
 
-import icon_cloud from '../../../images/icon-cloud.svg';
+import icon_cloud from '../../../images/Header/icon-cloud.svg';
 
 type Props = {
   closeMenu: () => void;
@@ -13,7 +13,11 @@ export const MobileMenu: React.FC<Props> = ({closeMenu}) => {
   return (
     <aside className='mobile-menu'>
       <button className='mobile-menu__close' onClick={closeMenu}>
-        <img src={icon_close} alt='icon close' />
+        <img
+          src={icon_close}
+          alt='icon close'
+          className='mobile-menu__close-icon'
+        />
       </button>
 
       <nav className='mobile-menu-nav'>

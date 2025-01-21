@@ -4,12 +4,12 @@ import {VideoBackground} from '../VideoBackground';
 
 // import burger_icon from '../../images/icon__burger.svg';
 
-import icon_cloud from '../../images/icon-cloud.svg';
-import icon_for_cloud from '../../images/icon-for-cloud.svg';
+import icon_cloud from '../../images/Header/icon-cloud.svg';
+import icon_for_cloud from '../../images/Header/icon-for-cloud.svg';
 
-import first_icon from '../../images/icon-first.svg';
-import second_icon from '../../images/icon-second.svg';
-import third_icon from '../../images/icon-third.svg';
+import first_icon from '../../images/Header/icon-first.svg';
+import second_icon from '../../images/Header/icon-second.svg';
+import third_icon from '../../images/Header/icon-third.svg';
 import {HeaderMobileElements} from './HeaderMobileElements';
 import {MobileMenu} from './MobileMenu';
 

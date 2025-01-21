@@ -16,6 +16,24 @@
   }
 }
 
+@mixin mobile-between-320-375 {
+  @media (min-width: calc(#{$small-mobile} + 1px)) and (max-width: $medium-mobile) {
+    @content;
+  }
+}
+
+@mixin mobile-to-375 {
+  @media (max-width: $medium-mobile) {
+    @content;
+  }
+}
+
+@mixin mobile-320 {
+  @media (max-width: $small-mobile) {
+    @content;
+  }
+}
+
 // @mixin page-grid {
 //   $columns: 1;
 
@@ -50,12 +68,13 @@
   column-gap: 24px;
   grid-template-columns: repeat(1, 1fr);
 
-  // @include on-tablet {
-  //   grid-template-columns: repeat(6, 1fr);
-  //   column-gap: 24px;
-  // }
+  @include on-tablet {
+    grid-template-columns: repeat(6, 1fr);
+    // column-gap: 24px;
+  }
 
   @include on-desktop {
     grid-template-columns: repeat(12, 1fr);
+    column-gap: 40px;
   }
 }
