@@ -19,17 +19,29 @@
   @include on-tablet-big {
     @include page-grid;
     padding-inline: 24px;
-    padding-bottom: 50px;
   }
   @include on-desktop {
-    // padding-top: 20px;
     padding-inline: 30px;
     @include page-grid;
     padding-top: 20px;
-    // max-width: 1136px;
+    max-width: 1440px;
     margin: 0 auto;
   }
+
 }
 
 
 
+// .wrapper {
+//   max-width: 1700px;
+//   margin: 0 auto;
+
+//   @media (min-width: 1700px) {
+//     max-width: 1920px;
+//     padding-inline: 40px;
+//   }
+
+//   @media (min-width: 1920px) {
+//     padding-inline: 60px; 
+//   }
+// }

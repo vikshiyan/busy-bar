@@ -76,12 +76,12 @@ export const Footer: FC = () => {
         />
       </div>
 
-      <div className='footer__text footer__text-1'>
+      <div className='footer__text'>
         <p className='footer__text-item'>Designed by Flipper Devices Inc.</p>
         <p className='footer__text-item'>© 2024. All rights reserved.</p>
       </div>
 
-      <div className='footer__text footer__text-2'>
+      <div className='footer__text'>
         <p className='footer__text-item'>
           2803 Philadelphia Pike, Suite B #551
         </p>

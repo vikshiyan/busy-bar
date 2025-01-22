@@ -27,6 +27,7 @@
     @content;
   }
 }
+
 @mixin mobile-between-320-375 {
   @media (min-width: calc(#{$small-mobile} + 1px)) and (max-width: $medium-mobile) {
     @content;
@@ -55,7 +56,7 @@
     // column-gap: 24px;
     
   }
-  @include on-tablet-big() {
+  @include on-tablet-big {
     grid-template-columns: repeat(9, 1fr);
     // column-gap: 24px;
   }

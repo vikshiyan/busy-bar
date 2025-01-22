@@ -20,14 +20,9 @@
     padding: 80px 100px 77px 100px;
   }
 
-  @include on-desktop {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50% 50%;
-    height: 33vh;
-    gap: 20px;
-    padding: 90px 40px;
-  }
+  // @include on-desktop {
+  //   @include page-grid;
+  // }
 
   &__nav {
     display: grid;
@@ -39,11 +34,6 @@
     }
     @include on-tablet-big {
       gap: 10px 166px;
-    }
-
-    @include on-desktop {
-      grid-column: 6 / 9;
-      grid-row: 1 / 1;
     }
 
     &-list {
@@ -73,6 +63,7 @@
   &__social {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-inline: 20px;
     margin-bottom: 50px;
 
@@ -81,13 +72,6 @@
       }
       @include on-tablet-big {
         padding-inline: 100px;
-      }
-
-      @include on-desktop {
-        grid-column: 10 / -1;
-        grid-row: 1 / 1;
-        justify-content: space-around;
-        margin-top: 10px;
       }
   }
 
@@ -107,11 +91,6 @@
     @include on-tablet-big {
       margin-bottom: 60px;
     }
-
-    @include on-desktop {
-      grid-column: 1 / 4;
-      grid-row: 1 / 1;
-    }
   }
 
   &__image {
@@ -130,22 +109,6 @@
 
     @include on-tablet-big {
       margin-left: 45px;
-    }
-
-    &-1 {
-      @include on-desktop {
-        grid-column: 1 / 4;
-        grid-row: 2 / 2;
-        margin-top: 8px;
-      }
-    }
-    
-    &-2 {
-      @include on-desktop {
-        grid-column: 10 / -1;
-        grid-row: 2 / 2;
-        margin-left: 40px;
-      }
     }
   }
 

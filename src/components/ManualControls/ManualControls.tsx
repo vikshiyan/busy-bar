@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import {FC} from 'react';
 import './ManualControls.scss';
 import manual_controls from '../../images/ManualControls/manual-controls.jpg';
 import icon_busy from '../../images/ManualControls/icon_busy.svg';
@@ -150,7 +150,6 @@ export const ManualControls: FC = () => {
               viewBox='5855 4742 213.6 300'
               className='controls__svg-mobileL'
             >
-
               <path
                 fill='transparent'
                 stroke='#000000'

@@ -10,13 +10,15 @@ export function App() {
   return (
     <div id='page-top' className='page'>
       <Header />
-
-      <ProductivityMultiTool />
-      <LiveBusy />
-      <ManualControls />
-      <Monochrome />
-
-      <Footer />
+      <div className='wrapper'>
+        <main>
+          <ProductivityMultiTool />
+          <LiveBusy />
+          <ManualControls />
+          <Monochrome />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

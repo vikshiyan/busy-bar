@@ -7,7 +7,6 @@ import './QuizBlock.scss';
 import {questions} from '../../utils/Questions';
 import {Slide, ToastContainer, toast} from 'react-toastify';
 
-
 const initialFormData = {
   firstName: '',
   lastName: '',
@@ -57,34 +56,35 @@ export const QuizBlock: FC = () => {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     if (isValid) {
-    const dataToSubmit = {
-      ...newPerson,
-      number,
-      answers: items,
-    };
-    try {
-      const response = await axios.post(
-        'https://httpbin.org/post',
-        dataToSubmit
-      );
-      console.log('Data submitted successfully:', response.data);
-      toast.success('Data submitted successfully!');
-      // Handle successful submission (e.g., show a success message, reset form, etc.)
-      handleReset();
-    } catch (error) {
-      console.error('Error submitting data:', error);
-      toast.error('Error submitting data!');
-      // Handle error (e.g., show an error message)
+      const dataToSubmit = {
+        ...newPerson,
+        number,
+        answers: items,
+      };
+      try {
+        const response = await axios.post(
+          'https://httpbin.org/post',
+          dataToSubmit
+        );
+        console.log('Data submitted successfully:', response.data);
+        toast.success('Data submitted successfully!');
+        // Handle successful submission (e.g., show a success message, reset form, etc.)
+        handleReset();
+      } catch (error) {
+        console.error('Error submitting data:', error);
+        toast.error('Error submitting data!');
+        // Handle error (e.g., show an error message)
+      }
+    } else {
+      const errorMessage = errorMap[errorCode || 0] || 'Invalid number';
+      toast.error(`Error: ${errorMessage}`);
     }
-  } else {
-    const errorMessage = errorMap[errorCode || 0] || "Invalid number";
-    toast.error(`Error: ${errorMessage}`);}
   };
 
   return (
     <div className='quiz'>
       {!finished ? (
-        <div>
+        <>
           <h2 className='quiz__title'>
             {questions[currentQuestion - 1].question}
           </h2>
@@ -102,7 +102,7 @@ export const QuizBlock: FC = () => {
           <div className='quiz__counter'>
             {currentQuestion}/{questions.length}
           </div>
-        </div>
+        </>
       ) : (
         <div>
           <h2 className='quiz__title'>
@@ -137,22 +137,20 @@ export const QuizBlock: FC = () => {
               required
               ref={telefonInputRef}
             /> */}
-            
+
             <IntlTelInput
               onChangeNumber={setNumber}
               onChangeValidity={setIsValid}
               onChangeErrorCode={setErrorCode}
               inputProps={{
-                className: "quiz__input",
-                
+                className: 'quiz__input',
               }}
               initOptions={{
-                
-                initialCountry: "ua",
+                initialCountry: 'ua',
                 loadUtils: () => import('intl-tel-input/build/js/utils.js'),
               }}
             />
-          
+
             <input
               type='email'
               name='email'
