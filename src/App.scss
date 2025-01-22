@@ -19,8 +19,9 @@
 
   @include on-desktop {
     // padding-top: 20px;
+    padding-inline: 30px;
     @include page-grid;
-    padding-inline: 20px;
+    padding-top: 20px;
     // max-width: 1136px;
     margin: 0 auto;
   }

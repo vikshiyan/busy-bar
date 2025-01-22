@@ -5,8 +5,13 @@
   width: 100%;
   z-index: 1;
   overflow: hidden;
-  background-color: $header-background-color;
   padding-bottom: 50px;
+  background-color: $header-background-color;
+
+  @include on-desktop {
+    background-color: $main-background-color;
+  }
+
 
   &__nav {
     color: $second-text-color;

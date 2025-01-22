@@ -12,6 +12,10 @@
     @include on-tablet {
       grid-column: 2 / 6;
     }
+
+    @include on-desktop {
+      grid-column: 2 / 12;
+    }
   }
 
   &__subtitle {
@@ -23,6 +27,11 @@
 
     @include on-tablet {
       grid-column: 2 / 6;
+    }
+
+    
+    @include on-desktop {
+      grid-column: 4 / 10;
     }
   }
 
@@ -231,6 +240,10 @@
         height: 28vh;
         object-position: -52%;
       }
+
+      @include on-desktop {
+        display: none;
+      }
     }
 
     &-2 {
@@ -239,6 +252,10 @@
 
       @include on-tablet-big {
         transform: scale(1.7) translateY(-3%) translateX(0px);
+      }
+
+      @include on-desktop {
+        display: none;
       }
     }
 
@@ -252,7 +269,10 @@
       @include on-tablet-big {
         height: 32vh;
         object-position: 99%;
+      }
 
+      @include on-desktop {
+        // display: none;
       }
     }
   }

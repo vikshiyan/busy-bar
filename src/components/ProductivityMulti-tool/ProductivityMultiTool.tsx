@@ -42,33 +42,36 @@ export const ProductivityMultiTool: FC = () => {
           </h4>
           <div>
             <div className='productivity-display__dot-text'>
-              <span className='productivity-display__dot'>•</span>
-              <span className='productivity-display__text'>
+              <p className='productivity-display__dot'>•</p>
+              <p className='productivity-display__text'>
                 Set any busy message, expiry timer and activation trigger
-              </span>
+              </p>
             </div>
             <div className='productivity-display__dot-text'>
-              <span className='productivity-display__dot'>•</span>
-              <span className='productivity-display__text'>
+              <p className='productivity-display__dot'>•</p>
+              <p className='productivity-display__text'>
                 Upload custom busy graphics or choose from gallery
-              </span>
+              </p>
             </div>
             <div className='productivity-display__dot-text'>
-              <span className='productivity-display__dot'>•</span>
-              <span className='productivity-display__text'>
+              <p className='productivity-display__dot'>•</p>
+              <p className='productivity-display__text'>
                 Activate manually from device or remotely from PC,
-              </span>
+              </p>
             </div>
             <div className='productivity-display__dot-text'>
-              <span className='productivity-display__dot'>•</span>
-              <span className='productivity-display__text'>
+              <p className='productivity-display__dot'>•</p>
+              <p className='productivity-display__text'>
                 Mobile App or via APIAutomatic activation by Zoom, Discord,
                 Microsoft Teams, Google Calendar
-              </span>
+              </p>
             </div>
           </div>
         </div>
-        <div className='productivity-display__item'>
+        <div
+          className='productivity-display__item 
+            productivity-display__second-block'
+        >
           <div className='productivity-display__heading'>
             <img
               src={icon_fifth}
@@ -81,22 +84,31 @@ export const ProductivityMultiTool: FC = () => {
             Built-in apps: clock, weather, social media metrics, currency chart,
             pixel art wallpapers, and more.
           </h4>
-          <div>
-            <div className='productivity-display__dot-text'>
-              <span className='productivity-display__dot'>•</span>
-              <span className='productivity-display__text'>
+          <div className='productivity-display__dot-container'>
+            <div
+              className='productivity-display__dot-text 
+                productivity-display__dot-special'
+            >
+              <p className='productivity-display__dot'>•</p>
+              <p className='productivity-display__text'>
                 Install JavaScript apps from community
-              </span>
+              </p>
             </div>
-            <div className='productivity-display__dot-text'>
-              <span className='productivity-display__dot'>•</span>
-              <span className='productivity-display__text'>
+            <div
+              className='productivity-display__dot-text 
+                productivity-display__dot-special'
+            >
+              <p className='productivity-display__dot'>•</p>
+              <p className='productivity-display__text'>
                 Cloud-based Python/JavaScript/Go apps
-              </span>
+              </p>
             </div>
           </div>
         </div>
-        <div className='productivity-display__item'>
+        <div
+          className='productivity-display__item 
+            productivity-display__third-block'
+        >
           <div className='productivity-display__heading'>
             <img
               src={icon_sixth}
@@ -109,18 +121,24 @@ export const ProductivityMultiTool: FC = () => {
             Time management technique based on short intervals of focused work
             broken by five-minute breaks.
           </h4>
-          <div>
-            <div className='productivity-display__dot-text'>
-              <span className='productivity-display__dot'>•</span>
-              <span className='productivity-display__text'>
+          <div className='productivity-display__dot-container'>
+            <div
+              className='productivity-display__dot-text
+                productivity-display__dot-special'
+            >
+              <p className='productivity-display__dot'>•</p>
+              <p className='productivity-display__text'>
                 Configure your own focus intervals
-              </span>
+              </p>
             </div>
-            <div className='productivity-display__dot-text'>
-              <span className='productivity-display__dot'>•</span>
-              <span className='productivity-display__text'>
+            <div
+              className='productivity-display__dot-text
+                productivity-display__dot-special'
+            >
+              <p className='productivity-display__dot'>•</p>
+              <p className='productivity-display__text'>
                 Integration with hourly payment time trackers
-              </span>
+              </p>
             </div>
           </div>
         </div>
