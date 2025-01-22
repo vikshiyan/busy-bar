@@ -8,6 +8,7 @@ import icon_settings from '../../images/ManualControls/icon_settings.svg';
 import icon_hand from '../../images/ManualControls/icon_hand.svg';
 import icon_back from '../../images/ManualControls/icon_back.svg';
 import icon_wheel from '../../images/ManualControls/icon_wheel.svg';
+import icon_selector from '../../images/ManualControls/icon_selector.svg';
 
 export const ManualControls: FC = () => {
   return (
@@ -19,6 +20,15 @@ export const ManualControls: FC = () => {
           connecting to PC or mobile app. The large buttons are designed for
           easy use without looking at the device.
         </h3>
+
+        <div className='controls__photo-wrapper-desktop'>
+          <img
+            src={manual_controls}
+            alt='manual controls'
+            className='controls__photo-desktop'
+          />
+        </div>
+
         <div className='controls__wrapper'>
           <div className='controls__lines-1'>
             <div className='controls__block-1'>
@@ -36,6 +46,7 @@ export const ManualControls: FC = () => {
                   work divided by 5-minute breaks
                 </h4>
               </div>
+
               <div className='controls__item'>
                 <div className='controls__text'>
                   <img
@@ -579,6 +590,21 @@ export const ManualControls: FC = () => {
                 </h4>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className='controls__selector'>
+          <img
+            src={icon_selector}
+            alt='icon selector'
+            className='controls__selector-icon'
+          />
+
+          <div className='controls__selector-text'>
+            <h3 className='controls__selector-heading'>5-position selector</h3>
+            <h4 className='controls__selector-description'>
+              Switch between modes
+            </h4>
           </div>
         </div>
       </div>
