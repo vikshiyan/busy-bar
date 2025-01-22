@@ -2,7 +2,6 @@
 
 .controls {
   background-color: $main-background-color;
-
   &__title {
     font-size: 48px;
     line-height: 53px;
@@ -12,7 +11,9 @@
     @include on-tablet {
       grid-column: 2 / 6;
     }
-
+    @include on-tablet-big {
+      grid-column: 2 / 8;
+    }
     @include on-desktop {
       grid-column: 2 / 12;
       grid-row: 1 / 1;
@@ -30,7 +31,9 @@
     @include on-tablet {
       grid-column: 2 / 6;
     }
-
+    @include on-tablet-big {
+      grid-column: 2 / 8;
+    }
     
     @include on-desktop {
       grid-column: 4 / 10;
@@ -45,6 +48,9 @@
 
     @include on-tablet {
       grid-column: 2 / 6;
+    }
+    @include on-tablet-big {
+      grid-column: 2 / 8;
     }
 
     @include on-desktop {
@@ -117,11 +123,17 @@
     @include on-tablet {
       font-size: 14px;
     }
+    @include on-tablet-big {
+      font-size: 16px;
+    }
   }
   
   &__button-wrapper {
     @include on-tablet {
       grid-column: 2 / 6;
+    }
+    @include on-tablet-big {
+      grid-column: 2 / 8;
     }
 
     @include on-desktop {
@@ -147,6 +159,10 @@
       width: 55px;
       height: 47px;
       margin-inline: 20px;
+      @include on-tablet-big {
+        width: 65px;
+        height: 57px;
+      }
     }
 
     &-title {
@@ -157,6 +173,9 @@
     &-description {
       color: $second-text-color;
       font-size: 13px;
+      @include on-tablet-big {
+        font-size: 16px;
+      }
     }
   }
 
@@ -313,7 +332,7 @@
 
       @include on-tablet-big {
         height: 28vh;
-        object-position: -52%;
+        object-position: -25%;
       }
 
       @include on-desktop {
@@ -326,7 +345,7 @@
       transform: scale(2.4) translateY(-6%) translateX(1px);
 
       @include on-tablet-big {
-        transform: scale(1.7) translateY(-3%) translateX(0px);
+        transform: scale(2.1) translateY(-6%) translateX(0px);
       }
 
       @include on-desktop {
@@ -345,7 +364,7 @@
 
       @include on-tablet-big {
         height: 32vh;
-        object-position: 99%;
+        object-position: 120%;
       }
 
       @include on-desktop {
@@ -355,59 +374,51 @@
 
     }
   }
+  &__svg-mobileS {
+    display: none;      
+  }
+  &__svg-mobileM {
+    display: none;
+  }
+  &__svg-mobileL {
+    display: none;
+  }
+  &__svg-tablet {
+    display: none;
+  }
+  &__svg-tabletBig {
+    display: none;
+  }
+  &__svg-desktop {
+    display: none;
+  }
   @include mobile-320 {
     &__svg-mobileS {
       display: block;      
     }
-    &__svg-mobileM {
-      display: none;
-    }
-    &__svg-mobileL {
-      display: none;
-    }
-    &__svg-tablet {
-      display: none;
-    }
   }
   @include mobile-between-320-375 {
-    &__svg-mobileS {
-      display: none;      
-    }
     &__svg-mobileM {
       display: block;
-    }
-    &__svg-mobileL {
-      display: none;
-    }
-    &__svg-tablet {
-      display: none;
     }
   }
   @include mobile-between-375-425 {
-    &__svg-mobileS {
-      display: none;      
-    }
-    &__svg-mobileM {
-      display: none;
-    }
     &__svg-mobileL {
       display: block;
     }
-    &__svg-tablet {
-      display: none;
-    }
   }
   @include on-tablet {
-    &__svg-mobileS {
-      display: none;      
-    }
-    &__svg-mobileM {
-      display: none;
-    }
-    &__svg-mobileL {
-      display: none;
-    }
     &__svg-tablet {
+      display: block;
+    }
+  }
+  @include on-tablet-big {
+    &__svg-tabletBig {
+      display: block;
+    }
+  }
+  @include on-desktop {
+    &__svg-desktop {
       display: block;
     }
   }
@@ -440,12 +451,18 @@
     pointer-events: none;
     z-index: 2;
   }
-
-  // correct delete
-  @include on-desktop {
-    
-    &__svg-tablet {
-      display: none;
-    }
+  &__svg-tabletBig {
+    position: absolute;
+    top: 5px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+  }
+  &__svg-desktop {
+    position: absolute;
+    top: 5px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
   }
 }

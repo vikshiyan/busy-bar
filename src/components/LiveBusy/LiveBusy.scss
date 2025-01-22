@@ -17,6 +17,10 @@
       grid-column: 2 / 6;
     }
 
+    @include on-tablet-big {
+      grid-column: 2 / 8;
+    }
+
     @include on-desktop {
       grid-column: 1 / 5;
       grid-row: 1 / 2;
@@ -32,12 +36,16 @@
   }
 
   &__img {
-    overflow: hidden; 
+    overflow: hidden;
     position: relative;
     margin-bottom: 50px;
 
     @include on-tablet {
       grid-column: 2 / 6;
+    }
+
+    @include on-tablet-big {
+      grid-column: 2 / 8;
     }
 
     @include on-desktop {
@@ -51,14 +59,17 @@
       height: 100vh; 
     }
   }
-  
+
   &__photo {
     display: block;
     width: 500px;
     object-fit: cover;
     transform: scale(1.1) translateY(15%) translateX(-95px);
 
-    @include on-tablet {
+
+
+    @include on-tablet-big {
+      grid-column: 2 / 8;
       width: 100%;
       transform: scale(1.1) translateY(15%) translateX(-75px);
     }
@@ -82,6 +93,10 @@
       grid-column: 2 / 6;
     }
 
+    @include on-tablet-big {
+      grid-column: 2 / 8;
+    }
+
     @include on-desktop {
       grid-column: 1 / 5;
       grid-row: 2 / 2;
@@ -99,7 +114,10 @@
   &__quiz {
     @include on-tablet {
       grid-column: 2 / 6;
-    }
+
+    @include on-tablet-big {
+      grid-column: 2 / 8;
+      }
 
     @include on-desktop {
       margin-top: 70px;
@@ -109,4 +127,6 @@
       z-index: 2; 
     }
   }
+  }
+
 }

@@ -18,6 +18,9 @@
   @include on-tablet {
     display: none; 
   }
+  @include on-tablet-big {
+    display: none; 
+  }
 
   @include on-desktop {
     display: none; 

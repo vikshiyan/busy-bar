@@ -16,6 +16,9 @@
   @include on-tablet {
     padding: 50px 100px 77px 100px;
   }
+  @include on-tablet-big {
+    padding: 80px 100px 77px 100px;
+  }
 
   // @include 
 
@@ -27,11 +30,17 @@
     @include on-tablet {
       gap: 10px 166px;
     }
+    @include on-tablet-big {
+      gap: 10px 166px;
+    }
 
     &-list {
       margin-bottom: 40px;
 
       @include on-tablet {
+        padding-inline: 50px;
+      }
+      @include on-tablet-big {
         padding-inline: 50px;
       }
     }
@@ -40,6 +49,9 @@
       margin-bottom: 25px;
 
       @include on-tablet {
+        font-size: 18px;
+      }
+      @include on-tablet-big {
         font-size: 18px;
       }
     }
@@ -56,6 +68,9 @@
      @include on-tablet {
         padding-inline: 100px;
       }
+      @include on-tablet-big {
+        padding-inline: 100px;
+      }
   }
 
   &__social-icon {
@@ -69,6 +84,9 @@
     margin-bottom: 20px;
 
     @include on-tablet {
+      margin-bottom: 60px;
+    }
+    @include on-tablet-big {
       margin-bottom: 60px;
     }
   }

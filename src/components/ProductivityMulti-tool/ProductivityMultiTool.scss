@@ -20,6 +20,9 @@
     @include on-tablet {
       grid-column: 2 / 6;
     }
+    @include on-tablet-big {
+      grid-column: 2 / 8;
+    }
 
     @include on-desktop {
       margin-top: 40px;
@@ -41,6 +44,12 @@
       justify-content: center;
       align-items: center;
       grid-column: 2 / 5;
+    }
+
+    @include on-tablet-big {
+      justify-content: center;
+      align-items: center;
+      grid-column: 2 / 8;
     }
 
     @include on-desktop {
@@ -102,6 +111,10 @@
 
     @include on-tablet {
       grid-column: 2 / 6;
+    }
+
+    @include on-tablet-big {
+      grid-column: 3 / 8;
     }
 
     @include on-desktop {
@@ -173,12 +186,19 @@
       @include on-tablet {
         grid-column: 2 / 6;
       }
+      @include on-tablet-big {
+        grid-column: 2 / 9;
+      }
     }
 
     &-table {
       width: 100%;
 
       @include on-tablet {
+        height: 600px;
+      }
+
+      @include on-tablet-big {
         height: 600px;
       }
 
@@ -310,6 +330,24 @@
     
   }
 
+  @include on-tablet-big {
+    &__developer-section {
+      grid-column: 2 / 9;
+    }
+    &__developer-table {
+      height: 560px;
+    }
+    &__developer-title {
+      top: 28px;
+      left: 122px;
+      font-size: 25px;
+    }
+    &__developer-container {
+      top: 120px;
+      left: 115px;
+      gap: 107px;
+    }
+  }
   @include on-desktop {
     &__first-block {
       grid-column: 1 / 4;
@@ -318,17 +356,17 @@
 
     &__second-block {
       grid-column: 1 / 4;
-      grid-row: 3/ 3;
+      grid-row: 3 / 3;
     }
 
     &__third-block {
       grid-column: 4 / 8;
-      grid-row: 3/ 3;
+      grid-row: 3 / 3;
     }
 
     &__developer-section {
       grid-column: 8 / 12;
-      grid-row: 3/ 3;
+      grid-row: 3 / 3;
     }
 
     &__dot-container {
