@@ -55,6 +55,7 @@ export const QuizBlock: FC = () => {
       ...newPerson,
       id: Date.now().toString(),
     };
+
     console.log('New Person:', newPersonWithId, items);
     handleReset();
   };

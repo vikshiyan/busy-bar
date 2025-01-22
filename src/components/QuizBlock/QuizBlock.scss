@@ -5,6 +5,10 @@
     font-size: 20px;
     text-align: center;
     margin-bottom: 15px;
+
+    @include on-tablet {
+      grid-column: 2 / 6;
+    }
   }
 
   &__buttons {

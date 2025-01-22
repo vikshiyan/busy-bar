@@ -4,6 +4,7 @@
   position: relative;
   color: $black-color;
   overflow-x: hidden;
+
 }
 
 .container {
@@ -11,11 +12,14 @@
   padding-block: 60px;
 
   @include on-tablet {
+    @include page-grid;
     padding-inline: 24px;
+    padding-bottom: 50px;
   }
 
   @include on-desktop {
     // padding-top: 20px;
+    @include page-grid;
     padding-inline: 20px;
     // max-width: 1136px;
     margin: 0 auto;

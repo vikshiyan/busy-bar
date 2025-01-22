@@ -7,8 +7,6 @@
     margin-bottom: 50px;
   }
 
-  @include page-grid;
-
   &__main-title {
     text-align: center;
     margin-bottom: 30px;
@@ -27,6 +25,7 @@
       grid-column: 4 / 10;
     }
   }
+
   &__container {
     display: flex;
     justify-content: center;
@@ -39,7 +38,12 @@
     @include on-tablet {
       justify-content: center;
       align-items: center;
-      grid-column: 3 / 5;
+      grid-column: 2 / 5;
+    }
+
+    @include on-desktop {
+      grid-column: 7 / 11;
+      
     }
 }
   &__block {
@@ -59,15 +63,17 @@
       left: 70%;
     }
 
-
     @include on-tablet {
-
+      left: 92%;
       display: flex;
       align-items: center;
-   
     }
+
+    @include on-tablet-big {
+      left: 126%;
+    }
+
     @include on-desktop {
-      grid-column: 5 / 11;
       display: flex;
       align-items: center;
       transform: translate(-50%, -50%) rotate(0deg); 
@@ -194,8 +200,14 @@
       font-weight: 500;
 
       @include on-tablet {
-        top: 35px;
-        left: 60px;
+        top: 76px;
+        left: 32px;
+      }
+
+      @include on-tablet-big {
+        top: 38px;
+        left: 92px;
+        font-size: 25px;
       }
     }
 
@@ -208,10 +220,15 @@
       gap: 23px;
 
       @include on-tablet {
-        top: 120px;
-        left: 50px;
-        gap: 100px;
+        top: 165px;
+        left: 19px;
+        gap: 81px;
+      }
 
+      @include on-tablet-big {
+        top: 140px;
+        left: 77px;
+        gap: 107px;
       }
     }
 
@@ -231,7 +248,11 @@
       font-weight: 500;
 
       @include on-tablet {
-        font-size: 16px;
+        font-size: 16px; 
+      }
+
+      @include on-tablet-big {
+        font-size: 18px;
       }
     }
 
@@ -247,7 +268,7 @@
         &-item {
           padding: 5px 0;
         }
-    }
+      }
 
       @include mobile-320 {
         &-title {
@@ -262,7 +283,9 @@
           font-size: 11px;
         }
     }
+
   }
+
 }
 
 

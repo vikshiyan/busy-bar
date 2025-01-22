@@ -15,6 +15,7 @@ export const ProductivityMultiTool: FC = () => {
         <h2 className='productivity-display__main-title'>
           Productivity multi-tool
         </h2>
+
         <div className='productivity-display__container'>
           <div className='productivity-display__block'>
             <img
@@ -25,8 +26,8 @@ export const ProductivityMultiTool: FC = () => {
           </div>
         </div>
         <div
-          className='productivity-display__item 
-          productivity-display__first-block'
+          className='productivity-display__item
+            productivity-display__first-block'
         >
           <div className='productivity-display__heading'>
             <img
@@ -39,7 +40,6 @@ export const ProductivityMultiTool: FC = () => {
           <h4 className='productivity-display__subtitle'>
             Customizable busy status message to match your own workflow.
           </h4>
-
           <div>
             <div className='productivity-display__dot-text'>
               <span className='productivity-display__dot'>•</span>
@@ -47,21 +47,18 @@ export const ProductivityMultiTool: FC = () => {
                 Set any busy message, expiry timer and activation trigger
               </span>
             </div>
-
             <div className='productivity-display__dot-text'>
               <span className='productivity-display__dot'>•</span>
               <span className='productivity-display__text'>
                 Upload custom busy graphics or choose from gallery
               </span>
             </div>
-
             <div className='productivity-display__dot-text'>
               <span className='productivity-display__dot'>•</span>
               <span className='productivity-display__text'>
                 Activate manually from device or remotely from PC,
               </span>
             </div>
-
             <div className='productivity-display__dot-text'>
               <span className='productivity-display__dot'>•</span>
               <span className='productivity-display__text'>
@@ -71,7 +68,6 @@ export const ProductivityMultiTool: FC = () => {
             </div>
           </div>
         </div>
-
         <div className='productivity-display__item'>
           <div className='productivity-display__heading'>
             <img
@@ -81,12 +77,10 @@ export const ProductivityMultiTool: FC = () => {
             />
             <h3 className='productivity-display__title'>Apps</h3>
           </div>
-
           <h4 className='productivity-display__subtitle'>
             Built-in apps: clock, weather, social media metrics, currency chart,
             pixel art wallpapers, and more.
           </h4>
-
           <div>
             <div className='productivity-display__dot-text'>
               <span className='productivity-display__dot'>•</span>
@@ -102,7 +96,6 @@ export const ProductivityMultiTool: FC = () => {
             </div>
           </div>
         </div>
-
         <div className='productivity-display__item'>
           <div className='productivity-display__heading'>
             <img
@@ -112,12 +105,10 @@ export const ProductivityMultiTool: FC = () => {
             />
             <h3 className='productivity-display__title'>Pomodoro timer</h3>
           </div>
-
           <h4 className='productivity-display__subtitle'>
             Time management technique based on short intervals of focused work
             broken by five-minute breaks.
           </h4>
-
           <div>
             <div className='productivity-display__dot-text'>
               <span className='productivity-display__dot'>•</span>
@@ -133,7 +124,6 @@ export const ProductivityMultiTool: FC = () => {
             </div>
           </div>
         </div>
-
         <div className='productivity-display__developer-section'>
           <img
             src={photo_table}
@@ -143,7 +133,6 @@ export const ProductivityMultiTool: FC = () => {
           <div className='productivity-display__developer-title'>
             {'>'}_ Developers friendly
           </div>
-
           <div className='productivity-display__developer-container'>
             <div className='productivity-display__developer-rigth'>
               <div className='productivity-display__developer-item'>
@@ -182,7 +171,6 @@ export const ProductivityMultiTool: FC = () => {
                 </div>
               </div>
             </div>
-
             <div className='productivity-display__developer-left'>
               <div className='productivity-display__developer-item'>
                 <div className='productivity-display__developer-text'>
@@ -212,15 +200,7 @@ export const ProductivityMultiTool: FC = () => {
             </div>
           </div>
         </div>
-        {/* <div className='productivity-display__last-block'>
-        <h3 className='block-title'>Назва блоку</h3>
-        <img src={last_block} alt='Опис зображення' className='block-image' />
-        <p className='block-text'>
-          Тут розміщуйте ваш текст, який буде пояснювати особливості та
-          функціональність вашого пристрою. Ви можете додати більше інформації,
-          як на зображенні.
-        </p>
-      </div> */}
+        {/* </div> */}
       </div>
     </div>
   );

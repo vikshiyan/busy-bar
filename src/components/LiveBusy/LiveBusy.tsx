@@ -18,7 +18,9 @@ export const LiveBusy: FC = () => {
           when a certain program is active.
         </h3>
 
-        <QuizBlock />
+        <div className='busy__quiz'>
+          <QuizBlock />
+        </div>
       </div>
     </div>
   );

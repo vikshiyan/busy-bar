@@ -3,6 +3,7 @@ import {FC} from 'react';
 import './Monochrome.scss';
 import monochrome from '../../images/Monochrome/monochrome.jpg';
 import display_icon from '../../images/Monochrome/display_icon.svg';
+import last_block from '../../images/Monochrome/last-block.svg';
 
 export const Monochrome: FC = () => {
   return (
@@ -11,7 +12,12 @@ export const Monochrome: FC = () => {
         <img
           src={monochrome}
           alt='Monochrome Background'
-          className='monochrome__background'
+          className='monochrome__background-small'
+        />
+        <img
+          src={last_block}
+          alt='Monochrome Background'
+          className='monochrome__background-big'
         />
       </div>
       <div className='container'>
@@ -22,6 +28,7 @@ export const Monochrome: FC = () => {
             status displayed on the main screen — even when it&apos;s turned
             away from you.
           </h3>
+
           <div className='monochrome__display'>
             <img
               src={display_icon}

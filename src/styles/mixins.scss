@@ -4,6 +4,12 @@
   }
 }
 
+@mixin on-tablet-big {
+  @media (min-width: $tablet-big-min-width) and (max-width: calc(#{$desktop-min-width} - 1px)) {
+    @content;
+  }
+}
+
 @mixin on-desktop {
   @media (min-width: $desktop-min-width) {
     @content;
@@ -11,7 +17,7 @@
 }
 
 @mixin only-mobile {
-  @media (max-width: calc($tablet-min-width - 1px)) {
+  @media (max-width: $large-mobile) {
     @content;
   }
 }

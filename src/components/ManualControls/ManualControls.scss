@@ -8,6 +8,10 @@
     line-height: 53px;
     text-align: center;
     margin-bottom: 20px;
+  
+    @include on-tablet {
+      grid-column: 2 / 6;
+    }
   }
 
   &__subtitle {
@@ -16,12 +20,19 @@
     font-weight: 500;
     text-align: center;
     margin-bottom: 40px;
+
+    @include on-tablet {
+      grid-column: 2 / 6;
+    }
   }
 
   &__wrapper {
     width: 100%;
-    display: block;
     position: relative;
+
+    @include on-tablet {
+      grid-column: 2 / 6;
+    }
   }
 
   &__lines-1 {
@@ -79,11 +90,24 @@
     color: $second-text-color;
 
     margin-bottom: 20px;
+
+    @include on-tablet {
+      font-size: 14px;
+    }
   }
   
+  &__button-wrapper {
+    @include on-tablet {
+      grid-column: 2 / 6;
+    }
+  }
+
   &__button-start {
     display: flex;
-    
+
+    @include on-tablet-big {
+      justify-content: center;
+    }
 
     &-info {
       margin-top: 9px;
@@ -112,6 +136,10 @@
     width: 42%;
     margin-bottom: 50px;
 
+    @include on-tablet-big {
+      width: 28%;
+    }
+
     &-head {
       display: flex;
       justify-content: center;
@@ -134,12 +162,20 @@
       font-size: 13px;
       color: $second-text-color;
       margin-top: 5px;
+
+      @include on-tablet-big {
+        padding-left: 28px;
+      }
     }
   }
 
   &__scrols {
     display: flex;
     margin-left: 10px;
+
+    @include on-tablet-big {
+      justify-content: center;
+    }
 
     &-icon {
       width: 50px;
@@ -149,7 +185,9 @@
 
     &-text {
 
-    
+      @include on-tablet-big {
+        width: 40%;
+      }
     }
     &-heading {
       font-size: 18px;
@@ -168,9 +206,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: hidden; 
     margin: 80px 0 100px;
     height: 170px;
+
+    @include on-tablet-big {
+      height: 226px;
+    }
   }
 
   &__photo {
@@ -182,12 +224,22 @@
       object-position: -4%;
       margin-block: 20px;
       overflow: hidden;
+      height: 25vh;
+      object-fit: cover;
 
+      @include on-tablet-big {
+        height: 28vh;
+        object-position: -52%;
+      }
     }
 
     &-2 {
       object-fit: contain;
       transform: scale(2.4) translateY(-6%) translateX(1px);
+
+      @include on-tablet-big {
+        transform: scale(1.7) translateY(-3%) translateX(0px);
+      }
     }
 
     &-3 {
@@ -195,8 +247,17 @@
       object-fit: cover;
       object-position: 105%;
       margin-bottom: 60px;
+
+
+      @include on-tablet-big {
+        height: 32vh;
+        object-position: 99%;
+
+      }
     }
   }
+
+
   &__svg {
     position: absolute;
     top: 5px;

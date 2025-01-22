@@ -1,12 +1,16 @@
 @import '../../styles/main.scss';
 
 .busy {
-  background-color: $white-color; 
+  background-color: $white-color;
 
   &__title {
     line-height: 52px;
     font-size: 48px;
     text-align: center;
+
+    @include on-tablet {
+      grid-column: 2 / 6;
+    }
     
   }
 
@@ -14,6 +18,10 @@
     overflow: hidden; 
     position: relative;
     margin-bottom: 50px;
+
+    @include on-tablet {
+      grid-column: 2 / 6;
+    }
   }
   
   &__photo {
@@ -21,10 +29,24 @@
     width: 500px;
     object-fit: cover;
     transform: scale(1.1) translateY(15%) translateX(-95px);
+
+    @include on-tablet {
+      grid-column: 2 / 6;
+      width: 100%;
+      transform: scale(1.1) translateY(15%) translateX(-75px);
+    }
   }
 
   &__subtitle {
     font-size: 18px;
     margin-bottom: 30px;
+
+    @include on-tablet {
+      grid-column: 2 / 6;
+    }
+  }
+
+  &__quiz {
+    grid-column: 2/6;
   }
 }

@@ -135,50 +135,29 @@ export const ManualControls: FC = () => {
             </div>
           </div>
         </div>
-        <div className='controls__lines-1'>
-        
-          <div className='controls__button-start'>
-            <img
-              src={icon_hand}
-              alt='icon hand'
-              className='controls__button-start-icon'
-            />
 
-            <div className='controls__button-start-info'>
-              <h3 className='controls__button-start-title'>
-                Start / Pause button
-              </h3>
-              <h4 className='controls__button-start-description'>
-                Start and stop your status. Also works as an OK button in menu
-              </h4>
+        <div className='controls__button-wrapper'>
+          <div className='controls__lines-1'>
+            <div className='controls__button-start'>
+              <img
+                src={icon_hand}
+                alt='icon hand'
+                className='controls__button-start-icon'
+              />
+              <div className='controls__button-start-info'>
+                <h3 className='controls__button-start-title'>
+                  Start / Pause button
+                </h3>
+                <h4 className='controls__button-start-description'>
+                  Start and stop your status. Also works as an OK button in menu
+                </h4>
+              </div>
             </div>
           </div>
-          <svg
-              xmlns='http://www.w3.org/2000/svg'
-              viewBox='5855 4742 213.6 300'
-              className='controls__svg'
-            >
-              <path
-                fill='transparent'
-                stroke='#000000'
-                fillOpacity='1'
-                strokeWidth='1'
-                strokeOpacity='1'
-                d='M 6030 4822 V 4910'
-              ></path>
-              </svg>
-          <div className='controls__photo-2-wrapper'>
-            <img
-              src={manual_controls}
-              alt='manualcontrols'
-              className='controls__photo-2 controls__photo'
-            />
-          </div>
-        </div>
-        <div className='controls__lines-1'>
+
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            viewBox='5855 4742 269.2 378'
+            viewBox='5855 4742 213.6 300'
             className='controls__svg'
           >
             <path
@@ -187,31 +166,57 @@ export const ManualControls: FC = () => {
               fillOpacity='1'
               strokeWidth='1'
               strokeOpacity='1'
-              d='M 5920 4746 H 5865 V 4840'
-            ></path>
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 5948 4940 V 5040'
+              d='M 6030 4822 V 4910'
             ></path>
           </svg>
-          <div className='controls__button-back'>
-            <div className='controls__button-back-head'>
-              <img
-                src={icon_back}
-                alt='icon back'
-                className='controls__button-back-icon'
-              />
-              <h3 className='controls__button-back-title'>Back button</h3>
-            </div>
-            <h4 className='controls__button-back-description'>
-              Go back in menu and quit apps
-            </h4>
+          <div className='controls__photo-2-wrapper'>
+            <img
+              src={manual_controls}
+              alt='manualcontrols'
+              className='controls__photo-2 controls__photo'
+            />
           </div>
-        
+        </div>
+
+        <div className='controls__button-wrapper'>
+          <div className='controls__lines-1'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='5855 4742 269.2 378'
+              className='controls__svg'
+            >
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 5920 4746 H 5865 V 4840'
+              ></path>
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 5948 4940 V 5040'
+              ></path>
+            </svg>
+            <div className='controls__button-back'>
+              <div className='controls__button-back-head'>
+                <img
+                  src={icon_back}
+                  alt='icon back'
+                  className='controls__button-back-icon'
+                />
+                <h3 className='controls__button-back-title'>Back button</h3>
+              </div>
+              <h4 className='controls__button-back-description'>
+                Go back in menu and quit apps
+              </h4>
+            </div>
+          </div>
+
           <img
             src={manual_controls}
             alt='manualcontrols'
@@ -228,7 +233,8 @@ export const ManualControls: FC = () => {
             <div className='controls__scrols-text'>
               <h3 className='controls__scrols-heading'>Scroll wheel</h3>
               <h4 className='controls__description'>
-                Set timer in Busy and Pomodoro modes, navigate in menu, OK button
+                Set timer in Busy and Pomodoro modes, navigate in menu, OK
+                button
               </h4>
             </div>
           </div>
