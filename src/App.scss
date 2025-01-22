@@ -4,7 +4,6 @@
   position: relative;
   color: $black-color;
   overflow-x: hidden;
-
 }
 
 .container {
@@ -27,21 +26,4 @@
     max-width: 1440px;
     margin: 0 auto;
   }
-
 }
-
-
-
-// .wrapper {
-//   max-width: 1700px;
-//   margin: 0 auto;
-
-//   @media (min-width: 1700px) {
-//     max-width: 1920px;
-//     padding-inline: 40px;
-//   }
-
-//   @media (min-width: 1920px) {
-//     padding-inline: 60px; 
-//   }
-// }

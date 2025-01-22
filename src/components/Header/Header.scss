@@ -12,11 +12,8 @@
     background-color: $main-background-color;
   }
 
-
   &__nav {
     color: $second-text-color;
-
-
 
     @include on-tablet {
       height: 60px;

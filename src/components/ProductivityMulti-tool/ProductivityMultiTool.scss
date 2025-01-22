@@ -119,8 +119,7 @@
 
     @include on-desktop {
       width: 391px;
-    }
-    
+    }  
   }
 
   &__heading {
@@ -207,8 +206,7 @@
         height: 218px;
         position: absolute;
         left: -36px;
-        width: 520px;
-    
+        width: 520px; 
       }
     }
 
@@ -326,8 +324,6 @@
         font-size: 11px;
       }
     }
-
-    
   }
 
   @include on-tablet-big {
@@ -379,6 +375,5 @@
     &__dot-special {
       flex: 1 1 45%;
     }
-
   }
 }

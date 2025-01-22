@@ -71,7 +71,6 @@
       position: relative;
       z-index: 1;
 
-      
       @include on-desktop {
         display: grid;
         grid-template-columns: 1fr;
@@ -94,9 +93,6 @@
         width: 80%;
       }
     }
-  }
-
-  &__item {
   }
 
   &__text {
@@ -143,7 +139,6 @@
       display: flex;
     }
   }
-
 
   &__button-start {
     display: flex;
@@ -288,7 +283,6 @@
         font-size: 14px;
         color: $second-text-color;
       }
-
     }
   }
 
@@ -340,7 +334,6 @@
       @include on-tablet-big {
         height: 28vh;
         object-position: -25%;
-        // object-position: -52%;
       }
 
       @include on-desktop {
@@ -357,7 +350,6 @@
       }
 
       @include on-desktop {
-        // display: none;
         transform: scale(1) translateY(-3%) translateX(0px);
         
       }
@@ -384,7 +376,7 @@
   }
 
   &__svg-mobileS {
-    display: none;      
+    display: none;
   }
   &__svg-mobileM {
     display: none;

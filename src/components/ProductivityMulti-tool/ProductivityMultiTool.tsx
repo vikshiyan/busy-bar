@@ -6,7 +6,6 @@ import icon_fourth from '../../images/Productivity/icon-fourth.svg';
 import icon_fifth from '../../images/Productivity/icon-fifth.svg';
 import icon_sixth from '../../images/Productivity/icon-sixth.svg';
 import photo_table from '../../images/Productivity/photo-table.svg';
-// import last_block from '../../images/last-block.svg';
 
 export const ProductivityMultiTool: FC = () => {
   return (
@@ -218,7 +217,6 @@ export const ProductivityMultiTool: FC = () => {
             </div>
           </div>
         </div>
-        {/* </div> */}
       </div>
     </div>
   );

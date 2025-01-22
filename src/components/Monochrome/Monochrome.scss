@@ -4,8 +4,6 @@
   position: relative;
   background-color: $monochrome-background-color;
   margin-bottom: 0;
-  // height: 100%;
-
 
   &__wrapper {
     position: relative;
@@ -36,7 +34,6 @@
       object-fit: cover;
       object-position: 57%;
     }
-
 
     &__background-big {
       display: none;
@@ -88,7 +85,6 @@
       width: 100%;
       object-fit: contain;
       transform: scale(1);
-
     }
 
     &__display {
@@ -122,7 +118,6 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-
       margin-top: 50px;
     }
   }

@@ -66,7 +66,7 @@ export const QuizBlock: FC = () => {
           'https://httpbin.org/post',
           dataToSubmit
         );
-        console.log('Data submitted successfully:', response.data);
+        console.log('Data submitted successfully:', response.data); // check delete
         toast.success('Data submitted successfully!');
         // Handle successful submission (e.g., show a success message, reset form, etc.)
         handleReset();
@@ -136,7 +136,7 @@ export const QuizBlock: FC = () => {
               className='quiz__input'
               required
               ref={telefonInputRef}
-            /> */}
+            /> // check delete*/}
 
             <IntlTelInput
               onChangeNumber={setNumber}
