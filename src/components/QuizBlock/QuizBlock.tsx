@@ -29,7 +29,6 @@ export const QuizBlock: FC = () => {
   const [isValid, setIsValid] = useState<boolean | null>(null);
   const [number, setNumber] = useState<string | null>(null);
   const [errorCode, setErrorCode] = useState<number | null>(null);
-  const [notice, setNotice] = useState<string | null>(null);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const {name, value} = event.target;
@@ -143,7 +142,6 @@ export const QuizBlock: FC = () => {
               onChangeNumber={setNumber}
               onChangeValidity={setIsValid}
               onChangeErrorCode={setErrorCode}
-              containerClassName={"quiz__input"}
               inputProps={{
                 className: "quiz__input",
                 
@@ -169,7 +167,6 @@ export const QuizBlock: FC = () => {
                 Submit
               </button>
             </div>
-            {notice && <div className='notice'>{notice}</div>}
           </form>
         </div>
       )}
