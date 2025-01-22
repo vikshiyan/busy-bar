@@ -16,7 +16,11 @@
     padding-inline: 24px;
     padding-bottom: 50px;
   }
-
+  @include on-tablet-big {
+    @include page-grid;
+    padding-inline: 24px;
+    padding-bottom: 50px;
+  }
   @include on-desktop {
     // padding-top: 20px;
     padding-inline: 30px;

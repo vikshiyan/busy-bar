@@ -16,9 +16,13 @@
   &__nav {
     color: $second-text-color;
 
-  
+
 
     @include on-tablet {
+      height: 60px;
+      margin-bottom: 450px;
+    }
+    @include on-tablet-big {
       height: 60px;
       margin-bottom: 450px;
     }
@@ -27,7 +31,7 @@
       height: 150px;
       margin-bottom: 260px;
     }
-  
+
     &-list {
       display: flex;
       padding: 40px;
@@ -35,15 +39,15 @@
       justify-content: flex-start;
       gap: 20px;
     }
-  
+
     &-item {
       display: flex;
       justify-content: space-between;
-  
+
       @include on-desktop {
         font-size: 20px;
       }
-  
+
       &--right {
         margin-left: auto;
         line-height: 24px;
@@ -63,7 +67,7 @@
 
     &-lr {
       display: flex;
-      
+
       &-title {
         display: inline-block;
         text-decoration: underline;
@@ -113,7 +117,7 @@
   }
 
   &__content {
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -132,7 +136,8 @@
     }
 
 
-    
+
+
     &-title {
       margin: 0 auto;
       line-height: 30px;
@@ -147,7 +152,12 @@
         width: 550px;
         margin-bottom: 40px;
       }
-    
+
+      @include on-tablet-big {
+        width: 580px;
+        margin-bottom: 40px;
+      }
+
       @include on-desktop {
         width: 680px;
         margin-bottom: 70px;
@@ -157,7 +167,7 @@
       &-special {
         font-weight: 700;
         font-size: 18px;
-  
+
         @include on-desktop {
           font-size: 20px;
         }
@@ -188,6 +198,10 @@
         margin-bottom: 50px;
       }
 
+      @include on-tablet-big {
+        margin-bottom: 50px;
+      }
+
       @include on-desktop {
         width: 200px;
         height: 72px;
@@ -203,19 +217,23 @@
   &__footer {
     color: $second-text-color;
     padding-inline: 10px;
-    
+
     @include on-desktop {
       display: flex;
       width: 100%;
       justify-content: space-between;
     }
-    
+
     &-item {
       padding-block: 10px;
       display: flex;
       width: 100%;
 
       @include on-tablet {
+        padding: 5px;
+      }
+
+      @include on-tablet-big {
         padding: 5px;
       }
 
@@ -243,6 +261,10 @@
         font-size: 18px;
       }
 
+      @include on-tablet-big {
+        font-size: 18px;
+      }
+
       @include on-desktop {
         font-size: 20px;
         margin-bottom: 10px;
@@ -254,6 +276,10 @@
       font-size: 13px;
 
       @include on-tablet {
+        font-size: 18px;
+      }
+
+      @include on-tablet-big {
         font-size: 18px;
       }
 

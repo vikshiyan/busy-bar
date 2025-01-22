@@ -17,7 +17,7 @@
     }
 
     @include on-tablet-big {
-      height: 73vh;
+      height: 50vh;
     }
 
     @include on-desktop {
@@ -28,7 +28,7 @@
   @include only-mobile {
     &__background-small {
       display: block;
-      position:absolute;
+      position: absolute;
       width: 100%;
       height: 100%;
       top: 50px;
@@ -65,23 +65,29 @@
   }
 
   @include on-tablet-big {
+    &__background-small {
+      display: none;
+    }
 
     &__background-big {
       height: 64vh;
       object-position: -422%;
-      transform: scale(1.3);
+      transform: scale(1.0);
     }
 
+    &__display {
+      display: none
+    }
   }
 
   @include on-desktop {
 
-   &__background-big {
+    &__background-big {
       object-fit: contain;
       position: static;
 
       transform: scale(1);
-     
+
     }
   }
 
@@ -92,6 +98,13 @@
     padding-inline: 10px;
 
     @include on-tablet {
+      top: 50px;
+      text-align: center;
+      width: 50%;
+      left: 25%;
+    }
+
+    @include on-tablet-big {
       top: 50px;
       text-align: center;
       width: 50%;
@@ -128,7 +141,7 @@
       height: 24px;
     }
 
-    &-title { 
+    &-title {
       font-weight: 600;
       font-size: 12px;
       margin-bottom: 5px;
@@ -144,4 +157,3 @@
 
 
 }
-

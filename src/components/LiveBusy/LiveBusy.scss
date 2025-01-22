@@ -11,19 +11,26 @@
     @include on-tablet {
       grid-column: 2 / 6;
     }
-    
+
+    @include on-tablet-big {
+      grid-column: 2 / 8;
+    }
   }
 
   &__img {
-    overflow: hidden; 
+    overflow: hidden;
     position: relative;
     margin-bottom: 50px;
 
     @include on-tablet {
       grid-column: 2 / 6;
     }
+
+    @include on-tablet-big {
+      grid-column: 2 / 8;
+    }
   }
-  
+
   &__photo {
     display: block;
     width: 500px;
@@ -32,6 +39,12 @@
 
     @include on-tablet {
       grid-column: 2 / 6;
+      width: 100%;
+      transform: scale(1.1) translateY(15%) translateX(-75px);
+    }
+
+    @include on-tablet-big {
+      grid-column: 2 / 8;
       width: 100%;
       transform: scale(1.1) translateY(15%) translateX(-75px);
     }
@@ -44,9 +57,18 @@
     @include on-tablet {
       grid-column: 2 / 6;
     }
+
+    @include on-tablet-big {
+      grid-column: 2 / 8;
+    }
   }
 
   &__quiz {
     grid-column: 2/6;
+
+    @include on-tablet-big {
+      grid-column: 2 / 8;
+    }
   }
+
 }

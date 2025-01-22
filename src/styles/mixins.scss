@@ -1,5 +1,5 @@
 @mixin on-tablet {
-  @media (min-width: $tablet-min-width) {
+  @media (min-width: $tablet-min-width) and (max-width: calc(#{$tablet-big-min-width} - 1px)) {
     @content;
   }
 }
@@ -27,12 +27,6 @@
     @content;
   }
 }
-@mixin mobile-between-375-425 {
-  @media (min-width: calc(#{$medium-mobile} + 1px)) and (max-width: $large-mobile) {
-    @content;
-  }
-  
-}
 @mixin mobile-between-320-375 {
   @media (min-width: calc(#{$small-mobile} + 1px)) and (max-width: $medium-mobile) {
     @content;
@@ -59,8 +53,12 @@
   @include on-tablet {
     grid-template-columns: repeat(6, 1fr);
     // column-gap: 24px;
+    
   }
-
+  @include on-tablet-big() {
+    grid-template-columns: repeat(9, 1fr);
+    // column-gap: 24px;
+  }
   @include on-desktop {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 0.2fr 400px 1fr;
