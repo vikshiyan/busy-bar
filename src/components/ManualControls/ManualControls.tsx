@@ -228,6 +228,7 @@ export const ManualControls: FC = () => {
         </div>
 
         <div className='controls__button-wrapper'>
+
           <div className='controls__lines-1'>
             <div className='controls__button-start'>
               <img
@@ -235,6 +236,7 @@ export const ManualControls: FC = () => {
                 alt='icon hand'
                 className='controls__button-start-icon'
               />
+
               <div className='controls__button-start-info'>
                 <h3 className='controls__button-start-title'>
                   Start / Pause button
@@ -244,225 +246,193 @@ export const ManualControls: FC = () => {
                 </h4>
               </div>
             </div>
-          </div>
-
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='5855 4742 213.6 300'
-            className='controls__svg'
-          >
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 6030 4822 V 4910'
-            ></path>
-          </svg>
-        <div className='controls__lines-1'>
-          <div className='controls__button-start'>
-            <img
-              src={icon_hand}
-              alt='icon hand'
-              className='controls__button-start-icon'
-            />
-
-            <div className='controls__button-start-info'>
-              <h3 className='controls__button-start-title'>
-                Start / Pause button
-              </h3>
-              <h4 className='controls__button-start-description'>
-                Start and stop your status. Also works as an OK button in menu
-              </h4>
+            <svg // svg for mobileS
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='5855 4742 213.6 300'
+              className='controls__svg-mobileS'
+            >
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 5995 4812 V 4925'
+              ></path>
+            </svg>
+            <svg // svg for mobileM
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='5855 4742 213.6 300'
+              className='controls__svg-mobileM'
+            >
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 6020 4812 V 4925'
+              ></path>
+            </svg>
+            <svg // svg for mobileL
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='5855 4742 213.6 300'
+              className='controls__svg-mobileL'
+            >
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 6050 4812 V 4925'
+              ></path>
+            </svg>
+            <svg // svg for tablet
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='5855 4742 213.6 300'
+              className='controls__svg-tablet'
+            >
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 5995 4812 V 4925'
+              ></path>
+            </svg>
+            <div className='controls__photo-2-wrapper'>
+              <img
+                src={manual_controls}
+                alt='manualcontrols'
+                className='controls__photo-2 controls__photo'
+              />
             </div>
           </div>
-          <svg // svg for mobileS
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='5855 4742 213.6 300'
-            className='controls__svg-mobileS'
-          >
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 5995 4812 V 4925'
-            ></path>
-          </svg>
-          <svg // svg for mobileM
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='5855 4742 213.6 300'
-            className='controls__svg-mobileM'
-          >
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 6020 4812 V 4925'
-            ></path>
-          </svg>
-          <svg // svg for mobileL
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='5855 4742 213.6 300'
-            className='controls__svg-mobileL'
-          >
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 6050 4812 V 4925'
-            ></path>
-          </svg>
-          <svg // svg for tablet
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='5855 4742 213.6 300'
-            className='controls__svg-tablet'
-          >
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 5995 4812 V 4925'
-            ></path>
-          </svg>
-          <div className='controls__photo-2-wrapper'>
+          <div className='controls__lines-1'>
+            <svg // svg for mobileS
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='5855 4742 269.2 378'
+              className='controls__svg-mobileS'
+            >
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 5920 4746 H 5875 V 4840'
+              ></path>
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 5957 4935 V 5040'
+              ></path>
+            </svg>
+            <svg // svg for mobileM
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='5855 4742 269.2 378'
+              className='controls__svg-mobileM'
+            >
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 5945 4746 H 5925 V 4840'
+              ></path>
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 6006 4935 V 5040'
+              ></path>
+            </svg>
+            <svg // svg for mobileL
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='5855 4742 269.2 378'
+              className='controls__svg-mobileL'
+            >
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 6030 4790 V 4818 H 5968 V 4840'
+              ></path>
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 6051 4935 V 5020 H 5960 V 5045'
+              ></path>
+            </svg>
+            <svg // svg for tablet
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='5855 4742 269.2 378'
+              className='controls__svg-tablet'
+            >
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 5920 4746 H 5875 V 4840'
+              ></path>
+              <path
+                fill='transparent'
+                stroke='#000000'
+                fillOpacity='1'
+                strokeWidth='1'
+                strokeOpacity='1'
+                d='M 5957 4935 V 5040'
+              ></path>
+            </svg>
+            <div className='controls__button-back'>
+              <div className='controls__button-back-head'>
+                <img
+                  src={icon_back}
+                  alt='icon back'
+                  className='controls__button-back-icon'
+                />
+                <h3 className='controls__button-back-title'>Back button</h3>
+              </div>
+              <h4 className='controls__button-back-description'>
+                Go back in menu and quit apps
+              </h4>
+            </div>
+
             <img
               src={manual_controls}
               alt='manualcontrols'
-              className='controls__photo-2 controls__photo'
+              className='controls__photo-3 controls__photo'
             />
-          </div>
-        </div>
-        <div className='controls__lines-1'>
-          <svg // svg for mobileS
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='5855 4742 269.2 378'
-            className='controls__svg-mobileS'
-          >
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 5920 4746 H 5875 V 4840'
-            ></path>
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 5957 4935 V 5040'
-            ></path>
-          </svg>
-          <svg // svg for mobileM
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='5855 4742 269.2 378'
-            className='controls__svg-mobileM'
-          >
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 5945 4746 H 5925 V 4840'
-            ></path>
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 6006 4935 V 5040'
-            ></path>
-          </svg>
-          <svg // svg for mobileL
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='5855 4742 269.2 378'
-            className='controls__svg-mobileL'
-          >
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 6030 4790 V 4818 H 5968 V 4840'
-            ></path>
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 6051 4935 V 5020 H 5960 V 5045'
-            ></path>
-          </svg>
-          <svg // svg for tablet
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='5855 4742 269.2 378'
-            className='controls__svg-tablet'
-          >
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 5920 4746 H 5875 V 4840'
-            ></path>
-            <path
-              fill='transparent'
-              stroke='#000000'
-              fillOpacity='1'
-              strokeWidth='1'
-              strokeOpacity='1'
-              d='M 5957 4935 V 5040'
-            ></path>
-          </svg>
-          <div className='controls__button-back'>
-            <div className='controls__button-back-head'>
+
+            <div className='controls__scrols'>
               <img
-                src={icon_back}
-                alt='icon back'
-                className='controls__button-back-icon'
+                src={icon_wheel}
+                alt='icon wheel'
+                className='controls__scrols-icon'
               />
-              <h3 className='controls__button-back-title'>Back button</h3>
-            </div>
-            <h4 className='controls__button-back-description'>
-              Go back in menu and quit apps
-            </h4>
-          </div>
 
-          <img
-            src={manual_controls}
-            alt='manualcontrols'
-            className='controls__photo-3 controls__photo'
-          />
-
-          <div className='controls__scrols'>
-            <img
-              src={icon_wheel}
-              alt='icon wheel'
-              className='controls__scrols-icon'
-            />
-
-            <div className='controls__scrols-text'>
-              <h3 className='controls__scrols-heading'>Scroll wheel</h3>
-              <h4 className='controls__description'>
-                Set timer in Busy and Pomodoro modes, navigate in menu, OK
-                button
-              </h4>
+              <div className='controls__scrols-text'>
+                <h3 className='controls__scrols-heading'>Scroll wheel</h3>
+                <h4 className='controls__description'>
+                  Set timer in Busy and Pomodoro modes, navigate in menu, OK
+                  button
+                </h4>
+              </div>
             </div>
           </div>
         </div>

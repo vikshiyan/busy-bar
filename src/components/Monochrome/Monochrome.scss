@@ -51,8 +51,9 @@
       display: block;
       position: absolute;
       width: 100%;
-      height: 100%;
-      top: 64px;
+      height: auto;
+      top: 41px;
+      left: 61px;
       object-fit: cover;
       object-position: -50%;
       transform: scale(1.2);
@@ -67,8 +68,7 @@
   @include on-tablet-big {
 
     &__background-big {
-      height: 64vh;
-      object-position: -422%;
+      left: 118px;
       transform: scale(1.3);
     }
 
@@ -78,8 +78,8 @@
 
    &__background-big {
       object-fit: contain;
-      position: static;
-
+      top: -69px;
+      left: -2px;
       transform: scale(1);
      
     }
