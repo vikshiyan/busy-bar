@@ -1,22 +1,24 @@
 import {FC, useState} from 'react';
 import axios from 'axios';
 import IntlTelInput from 'intl-tel-input/react';
+import 'intl-tel-input/build/css/intlTelInput.css';
+import 'intl-tel-input/build/js/utils.js';
 import './QuizBlock.scss';
 import {questions} from '../../utils/Questions';
 import {Slide, ToastContainer, toast} from 'react-toastify';
 
+
 const initialFormData = {
   firstName: '',
   lastName: '',
-  telefon: '',
   email: '',
 };
 
 const errorMap = [
   'Invalid number',
   'Invalid country code',
-  'Too short',
-  'Too long',
+  'Number too short',
+  'Number too long',
   'Invalid number',
 ];
 export const QuizBlock: FC = () => {
@@ -55,8 +57,10 @@ export const QuizBlock: FC = () => {
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+    if (isValid) {
     const dataToSubmit = {
       ...newPerson,
+      number,
       answers: items,
     };
     try {
@@ -73,6 +77,9 @@ export const QuizBlock: FC = () => {
       toast.error('Error submitting data!');
       // Handle error (e.g., show an error message)
     }
+  } else {
+    const errorMessage = errorMap[errorCode || 0] || "Invalid number";
+    toast.error(`Error: ${errorMessage}`);}
   };
 
   return (
@@ -131,14 +138,23 @@ export const QuizBlock: FC = () => {
               required
               ref={telefonInputRef}
             /> */}
+            
             <IntlTelInput
               onChangeNumber={setNumber}
               onChangeValidity={setIsValid}
               onChangeErrorCode={setErrorCode}
+              containerClassName={"quiz__input"}
+              inputProps={{
+                className: "quiz__input",
+                
+              }}
               initOptions={{
-                initialCountry: 'ua',
+                
+                initialCountry: "ua",
+                loadUtils: () => import('intl-tel-input/build/js/utils.js'),
               }}
             />
+          
             <input
               type='email'
               name='email'
