@@ -439,7 +439,7 @@ export const ManualControls: FC = () => {
 
               <div className='controls__scrols-text'>
                 <h3 className='controls__scrols-heading'>Scroll wheel</h3>
-                <h4 className='controls__description'>
+                <h4 className='controls__scrols-description'>
                   Set timer in Busy and Pomodoro modes, navigate in menu, OK
                   button
                 </h4>
@@ -455,7 +455,7 @@ export const ManualControls: FC = () => {
             className='controls__selector-icon'
           />
 
-          <div className='controls__selector-text'>
+          <div>
             <h3 className='controls__selector-heading'>5-position selector</h3>
             <h4 className='controls__selector-description'>
               Switch between modes
