@@ -49,7 +49,6 @@
   }
 
   &__block {
-
     &-1 {
       display: flex;
       justify-content: space-between;
@@ -68,31 +67,23 @@
   }
 
   &__item {
-
-   
   }
 
   &__text {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-
   }
-
 
   &__icon {
     width: 26px;
     height: 26px;
     padding-right: 10px;
-
-    
   }
 
   &__heading {
     font-size: 18px;
   }
-
-
 
   &__description {
     font-size: 12px;
@@ -110,6 +101,7 @@
       grid-column: 2 / 6;
     }
   }
+
 
   &__button-start {
     display: flex;
@@ -136,7 +128,6 @@
     &-description {
       color: $second-text-color;
       font-size: 13px;
-    
     }
   }
 
@@ -206,11 +197,9 @@
     &-description {
       color: $second-text-color;
       font-size: 13px;
-    
     }
   }
 
-  
   &__photo-2-wrapper {
     display: flex;
     justify-content: center;
@@ -226,7 +215,7 @@
 
   &__photo {
     width: 100%;
-   
+
     &-1 {
       height: 25vh;
       object-fit: cover;
@@ -276,14 +265,89 @@
       }
     }
   }
-
-
-  &__svg {
+  @include mobile-320 {
+    &__svg-mobileS {
+      display: block;      
+    }
+    &__svg-mobileM {
+      display: none;
+    }
+    &__svg-mobileL {
+      display: none;
+    }
+    &__svg-tablet {
+      display: none;
+    }
+  }
+  @include mobile-between-320-375 {
+    &__svg-mobileS {
+      display: none;      
+    }
+    &__svg-mobileM {
+      display: block;
+    }
+    &__svg-mobileL {
+      display: none;
+    }
+    &__svg-tablet {
+      display: none;
+    }
+  }
+  @include mobile-between-375-425 {
+    &__svg-mobileS {
+      display: none;      
+    }
+    &__svg-mobileM {
+      display: none;
+    }
+    &__svg-mobileL {
+      display: block;
+    }
+    &__svg-tablet {
+      display: none;
+    }
+  }
+  @include on-tablet {
+    &__svg-mobileS {
+      display: none;      
+    }
+    &__svg-mobileM {
+      display: none;
+    }
+    &__svg-mobileL {
+      display: none;
+    }
+    &__svg-tablet {
+      display: block;
+    }
+  }
+  &__svg-mobileS {
     position: absolute;
     top: 5px;
     height: 100%;
     pointer-events: none;
-    z-index: 2; 
+    z-index: 2;
+
   }
-  
+  &__svg-mobileM {
+    position: absolute;
+    top: 5px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+  }
+  &__svg-mobileL {
+    position: absolute;
+    top: 5px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+  }
+  &__svg-tablet {
+    position: absolute;
+    top: 5px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+  }
 }
