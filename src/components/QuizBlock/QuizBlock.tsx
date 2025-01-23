@@ -66,14 +66,12 @@ export const QuizBlock: FC = () => {
           'https://httpbin.org/post',
           dataToSubmit
         );
-        console.log('Data submitted successfully:', response.data); // check delete
+        console.log('Data submitted successfully:', response.data);
         toast.success('Data submitted successfully!');
-        // Handle successful submission (e.g., show a success message, reset form, etc.)
         handleReset();
       } catch (error) {
         console.error('Error submitting data:', error);
         toast.error('Error submitting data!');
-        // Handle error (e.g., show an error message)
       }
     } else {
       const errorMessage = errorMap[errorCode || 0] || 'Invalid number';
@@ -127,16 +125,6 @@ export const QuizBlock: FC = () => {
               className='quiz__input'
               required
             />
-            {/* <input
-              type='tel'
-              name='telefon'
-              value={newPerson.telefon}
-              onChange={handleChange}
-              placeholder='Telefon'
-              className='quiz__input'
-              required
-              ref={telefonInputRef}
-            /> // check delete*/}
 
             <IntlTelInput
               onChangeNumber={setNumber}
