@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import {FC, useState} from 'react';
 import axios from 'axios';
 import IntlTelInput from 'intl-tel-input/react';
